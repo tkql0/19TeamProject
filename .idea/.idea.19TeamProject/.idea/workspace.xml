@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db4c27a-3d38-4d67-b532-0ce0e96229e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Main Background/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Demo Assets/Main Background/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Exit Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Exit Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Fade In.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Fade In.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Fade out.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/Exit Menu/Fade out.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Deactivate.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Deactivate.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Move.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Move.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Static.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Arrow Static.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Inactive.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Assets/arrow/Inactive.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Main Menu Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetesExternal/Main menu with parallax FREE 2/Main Menu Demo.unity" afterDir="false" />
-    </list>
+    <list default="true" id="9db4c27a-3d38-4d67-b532-0ce0e96229e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,19 +21,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Feature__Seo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__Seo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MacOS/Unity" />
@@ -96,6 +82,7 @@
       <updated>1728988654850</updated>
       <workItem from="1728988660288" duration="931000" />
       <workItem from="1728997235384" duration="271000" />
+      <workItem from="1729047100418" duration="1000" />
     </task>
     <servers />
   </component>
