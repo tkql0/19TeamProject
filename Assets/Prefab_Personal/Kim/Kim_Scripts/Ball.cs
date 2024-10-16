@@ -20,7 +20,8 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
-        Reset();
+        // TODO :: Reset(spawn Position);
+        Reset(transform.position);
         LaunchBall();
     }
 
@@ -32,11 +33,11 @@ public class Ball : MonoBehaviour
         rigid2D.AddForce(jumpVelocity, ForceMode2D.Impulse);
     }
 
-    public void Reset()
+    public void Reset(Vector2 inPosition)
     {
         // TODO :: paddle Position Reset
         rigid2D.velocity = Vector2.zero;
-        transform.position = Vector2.zero;
+        transform.position = inPosition;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
