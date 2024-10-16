@@ -58,7 +58,7 @@ public class SettingsController : MonoBehaviour {
 
     public void TextQChange()
     {
-        gameSettings.textureQuality = QualitySettings.globalTextureMipmapLimit = textQualityDrop.value;
+        gameSettings.textureQuality = QualitySettings.masterTextureLimit = textQualityDrop.value;
     }
 
     public void VolumeChange()
