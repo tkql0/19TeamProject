@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    private Rigidbody2D rigid2D;
+    public Rigidbody2D rigid2D;
     private Vector2 myPos;
 
     public float speed;
+
+    public int damage = 0;
 
     private void Awake()
     {
@@ -32,7 +34,7 @@ public class Ball : MonoBehaviour
 
     public void Reset(Vector2 inPosition)
     {
-        // TODO :: paddle Position Reset
+        // TODO :: 패들 위치에서 생성? 생성 위치는 발라 질 수 있음
         rigid2D.velocity = Vector2.zero;
         transform.position = inPosition;
     }
@@ -44,12 +46,12 @@ public class Ball : MonoBehaviour
         //GameManager.instance.currentScore += out???.score;
 
         // TODO :: target = collision.gameObject.layer
-        if (collision.gameObject.layer == 8)
-        {
+        //if (collision.gameObject.layer == 8)
+        //{
             // TODO :: 5 = collision.gameObject.class.Score
             //GameManager.Instance.currentScore += 5;
-            Destroy(collision.gameObject);
-        }
+            //Destroy(collision.gameObject);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
