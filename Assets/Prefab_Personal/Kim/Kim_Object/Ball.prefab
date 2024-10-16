@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6812446703841235930}
   - component: {fileID: -713953040458716015}
   - component: {fileID: -3789086900550920628}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &-713953040458716015
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -161,7 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023302544d0947b4189e608dc0454988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target:
-    serializedVersion: 2
-    m_Bits: 16
   speed: 5
