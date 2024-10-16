@@ -13,8 +13,6 @@ public class Ball : MonoBehaviour
 
     public float speed;
 
-    private bool isStart;
-
     private void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
@@ -22,20 +20,11 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
-        isStart = false;
         Reset();
+        LaunchBall();
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown("Space") && !isStart)
-        {
-            isStart = true;
-            LaunchBall();
-        }
-    }
-
-    private void LaunchBall()
+    public void LaunchBall()
     {
         Vector2 jumpVelocity = Vector2.up * speed;
         jumpVelocity.x = Random.Range(-4f, 4f);
@@ -45,7 +34,7 @@ public class Ball : MonoBehaviour
 
     public void Reset()
     {
-        // TODO :: SpawnPosition Reset
+        // TODO :: paddle Position Reset
         rigid2D.velocity = Vector2.zero;
         transform.position = Vector2.zero;
     }
@@ -57,7 +46,7 @@ public class Ball : MonoBehaviour
         //GameManager.instance.currentScore += out???.score;
 
         // TODO :: target = collision.gameObject.layer
-        if (collision.gameObject.layer == target)
+        if (collision.gameObject.layer == 4)
         {
             // TODO :: 5 = collision.gameObject.class.Score
             //GameManager.Instance.currentScore += 5;
