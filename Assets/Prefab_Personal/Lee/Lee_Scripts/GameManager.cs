@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -7,11 +8,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] GameObject Ball;
-    public List<GameObject> BallList;
+    public List<GameObject> BallList =new List<GameObject>();
+    public List<int> scoreRanking = new List<int>();          //this list will use in ScoreBoard
     public int currentScore;
     public int highScore;
     public int life;                                // 0 -> GameOver
     public float time;
+    private bool isMultiplay;                       // flase : 1 player ,  true : 2 players
 
     private void Awake()
     {
@@ -33,17 +36,22 @@ public class GameManager : MonoBehaviour
     public void StageStart()
     {
         life = 3;
+        currentScore = 0;
+        LaunchBall();
     }
 
     public void StageClear()
     {
         highScore = Mathf.Max(highScore, currentScore);
-
+        scoreRanking.Add(currentScore);
+        scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));                 // Sort in Descending order
     }
 
     public void GameOver()
     {
         highScore = Mathf.Max(highScore, currentScore);
+        scoreRanking.Add(currentScore);
+        scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));
     }
 
     public void MissBall(GameObject Ball)
@@ -71,6 +79,20 @@ public class GameManager : MonoBehaviour
     }
 
     private void LaunchBall()                 // random direction 
+    {
+
+    }
+
+    public void BallNumber()
+    {
+
+    }
+    public void BallPower()
+    {
+
+    }
+
+    public void PaddleIncrease()
     {
 
     }
