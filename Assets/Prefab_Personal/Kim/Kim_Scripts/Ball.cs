@@ -8,9 +8,6 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rigid2D;
     private Vector2 myPos;
 
-    [SerializeField]
-    private LayerMask target;
-
     public float speed;
 
     private void Awake()
