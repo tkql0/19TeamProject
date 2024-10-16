@@ -44,7 +44,7 @@ public class Ball : MonoBehaviour
         //GameManager.instance.currentScore += out???.score;
 
         // TODO :: target = collision.gameObject.layer
-        if (collision.gameObject.layer == 4)
+        if (collision.gameObject.layer == 8)
         {
             // TODO :: 5 = collision.gameObject.class.Score
             //GameManager.Instance.currentScore += 5;
