@@ -16,13 +16,13 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D inCollision)
     {
-        if (inCollision.gameObject == ball)
+        if (inCollision.gameObject.layer == 7)
         {
             this.gameObject.SetActive(false);
         }
         else if (inCollision.gameObject == bar)
         {
-            //게임 끝
+            //게임 ??
         }
     }
 }
