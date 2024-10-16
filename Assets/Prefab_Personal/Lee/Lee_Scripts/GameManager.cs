@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int highScore;
     public int life;                                // 0 -> GameOver
     public float time;
+    private bool isMultiplay;                       // flase : 1 player ,  true : 2 players
 
     private void Awake()
     {
