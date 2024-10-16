@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.003921569, g: 0.63529414, b: 0.5137255, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -223,6 +223,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1556333998698335012, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 319.1183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556333998698335012, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 268.8977
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556333998698335012, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000011444
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556333998698335012, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000002861
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666520083525219460, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2041710994, guid: bae0b17cc226c4b4b9cc5c7558f24535, type: 3}
+    - target: {fileID: 2460125672071900680, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e808d3052a8264176990ec710d7559ce, type: 3}
     - target: {fileID: 2841934308178868816, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -319,12 +343,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6122537900562678568, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2041710994, guid: bae0b17cc226c4b4b9cc5c7558f24535, type: 3}
     - target: {fileID: 8899173274570034883, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
       propertyPath: m_Name
       value: Start_Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3033457013756435787, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8899173274570034883, guid: 77df212c79bbf44ac872355c28560fb0, type: 3}
