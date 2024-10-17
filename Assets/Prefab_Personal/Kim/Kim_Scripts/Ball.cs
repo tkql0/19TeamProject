@@ -8,7 +8,8 @@ public class Ball : MonoBehaviour
     public Rigidbody2D rigid2D;
     private Vector2 myPos;
 
-    public float speed;
+    public float minSpeed;
+    public float maxSpeed;
 
     public int damage = 0;
 
@@ -19,14 +20,27 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
+        myPos = transform.position;
         // TODO :: Reset(spawn Position);
         Reset(transform.position);
         LaunchBall();
     }
 
+    private void FixedUpdate()
+    {
+        float moveSpeedX = rigid2D.velocity.x;
+        float moveSpeedY = rigid2D.velocity.y;
+
+        if (Mathf.Abs(moveSpeedX) < minSpeed || Mathf.Abs(moveSpeedX) > maxSpeed)
+            rigid2D.velocity = new Vector2(Mathf.Sign(moveSpeedX) * minSpeed, moveSpeedY);
+
+        if (Mathf.Abs(moveSpeedY) < minSpeed || Mathf.Abs(moveSpeedY) > maxSpeed)
+            rigid2D.velocity = new Vector2(moveSpeedX, Mathf.Sign(moveSpeedY) * minSpeed);
+    }
+
     public void LaunchBall()
     {
-        Vector2 jumpVelocity = Vector2.up * speed;
+        Vector2 jumpVelocity = Vector2.up * minSpeed;
         jumpVelocity.x = Random.Range(-4f, 4f);
 
         rigid2D.AddForce(jumpVelocity, ForceMode2D.Impulse);
@@ -48,9 +62,9 @@ public class Ball : MonoBehaviour
         // TODO :: target = collision.gameObject.layer
         //if (collision.gameObject.layer == 8)
         //{
-            // TODO :: 5 = collision.gameObject.class.Score
-            //GameManager.Instance.currentScore += 5;
-            //Destroy(collision.gameObject);
+        // TODO :: 5 = collision.gameObject.class.Score
+        //GameManager.Instance.currentScore += 5;
+        //Destroy(collision.gameObject);
         //}
     }
 
