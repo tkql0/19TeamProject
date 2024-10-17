@@ -9,7 +9,6 @@ public class Ball : MonoBehaviour
     private Vector2 myPos;
 
     public float minSpeed;
-    public float maxSpeed;
 
     public int damage = 0;
 
@@ -28,14 +27,18 @@ public class Ball : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float moveSpeedX = rigid2D.velocity.x;
-        float moveSpeedY = rigid2D.velocity.y;
+        Vector2 moveVec = transform.position;
+        float speed = moveVec.magnitude;
 
-        if (Mathf.Abs(moveSpeedX) < minSpeed || Mathf.Abs(moveSpeedX) > maxSpeed)
-            rigid2D.velocity = new Vector2(Mathf.Sign(moveSpeedX) * minSpeed, moveSpeedY);
-
-        if (Mathf.Abs(moveSpeedY) < minSpeed || Mathf.Abs(moveSpeedY) > maxSpeed)
-            rigid2D.velocity = new Vector2(moveSpeedX, Mathf.Sign(moveSpeedY) * minSpeed);
+        if (speed < minSpeed)
+        {
+            if (Mathf.Abs(rigid2D.velocity.x) < minSpeed)
+                rigid2D.velocity = new Vector2(Mathf.Sign(rigid2D.velocity.x)
+                    * minSpeed, rigid2D.velocity.y);
+            if (Mathf.Abs(rigid2D.velocity.y) < minSpeed)
+                rigid2D.velocity = new Vector2(rigid2D.velocity.x,
+                    Mathf.Sign(rigid2D.velocity.y) * minSpeed);
+        }
     }
 
     public void LaunchBall()
