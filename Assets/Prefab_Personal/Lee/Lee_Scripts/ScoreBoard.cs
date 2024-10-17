@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+//using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreBoard : MonoBehaviour
 {
-    [SerializeField] TMP_Text ScoreText;
+    [SerializeField] GameObject ScoreRecord;
     [SerializeField] GameObject UICanvas;
+    GameObject ScoreText;
+    
+
+    private void Awake()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +23,12 @@ public class ScoreBoard : MonoBehaviour
 
         for (int i = 0; i < scoreList.Count; i++)
         {
-            TMP_Text txt = Instantiate(ScoreText, UICanvas.transform.position , Quaternion.identity);
-            txt.transform.position += new Vector3(0, 100 - 50 * i, 0);
-            txt.transform.parent = UICanvas.transform;
-            txt.text = $"{i+1}. {scoreList[i]} pt";
+            GameObject score  = Instantiate(ScoreRecord, UICanvas.transform.position , Quaternion.identity);
+            score.transform.position += new Vector3(0, 100 - 50 * i, 0);
+            score.transform.parent = UICanvas.transform;
+            ScoreText = score.transform.GetChild(0).gameObject;
+            Text scoreText = ScoreText.GetComponent<Text>();
+            scoreText.text = $"{i+1}. {scoreList[i]} pt";
         }
     }
 
