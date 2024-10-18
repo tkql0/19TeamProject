@@ -599,6 +599,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5624404945604538584, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6901054696500623460, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
       propertyPath: m_BodyType
       value: 1
@@ -721,6 +725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1279696583212080846, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -787,12 +795,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
-  BallList: []
+  BallList:
+  - {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
   life: 0
   time: 0
+  isMultiplay: 0
+  player1: {fileID: 2821977578665597373, guid: 74ed044fc28534241837837162ddbc35, type: 3}
+  player2: {fileID: 5304346020120232401, guid: f9ae32f2588cfb3479a6e48da1f880ac, type: 3}
 --- !u!4 &1080931989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
