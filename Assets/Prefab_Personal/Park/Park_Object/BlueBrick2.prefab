@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3740245259801745780}
   - component: {fileID: 2846683392157746771}
   - component: {fileID: 4536702054787130464}
-  - component: {fileID: 488229982625573078}
+  - component: {fileID: 5888758132238713681}
   m_Layer: 0
   m_Name: BlueBrick2
   m_TagString: Untagged
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.09}
   m_EdgeRadius: 0
---- !u!114 &488229982625573078
+--- !u!114 &5888758132238713681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
