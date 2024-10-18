@@ -10,13 +10,6 @@ public class ShiftEffect : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-   
-
-    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
-    {
         boardToward = Vector3.zero;
     }
 
