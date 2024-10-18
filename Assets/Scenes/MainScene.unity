@@ -1398,10 +1398,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1804959596}
     m_Modifications:
+    - target: {fileID: 172293694635849700, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1693007316730905432, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: endBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: e6a608b944104e34db6dca8bbe90a50f, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: menuBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 0efd8701bf913474b94de50a7b487f4a, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: stageBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: dbc03cd7a93744d0bbd1ab13bdc643b1, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: hammerBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 12c177d371dd44799b047fc7e723e3c0, type: 3}
     - target: {fileID: 6463964314445474507, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,18 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
     AudioSource audioSource;
+    
     public AudioClip menuBGM;
-    public AudioClip stageBGM;
+    public AudioClip hammerBGM;
+    public AudioClip endBGM;
+
+    public enum AudioType
+    {
+        MenuBGM,
+        HammerBGM,
+        EndBGM
+    }
+    
 
     private void Awake()
     {
@@ -19,25 +30,33 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-
         }
     }
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        PlayMenuBGM();
+        PlayBGM(AudioType.MenuBGM);
     }
 
-    public void PlayMenuBGM()
+    public void PlayBGM(AudioType audioType)
     {
-        audioSource.clip = menuBGM;
-        audioSource.Play();
-    }
-
-    public void PlayStageBGM()
-    {
-        audioSource.clip = stageBGM;
-        audioSource.Play();
+        switch (audioType)
+        {
+            case AudioType.MenuBGM:
+                audioSource.clip = menuBGM;
+                audioSource.Play();
+                break;
+            case AudioType.HammerBGM:
+                audioSource.PlayOneShot(hammerBGM);
+                break;
+            case AudioType.EndBGM:
+                audioSource.clip = endBGM;
+                audioSource.Play();
+                break;
+            default:
+                throw new System.Exception("Invalid AudioType");
+                break;
+        }
     }
 }
