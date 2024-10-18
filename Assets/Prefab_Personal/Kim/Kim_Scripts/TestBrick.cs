@@ -46,12 +46,8 @@ public class TestBrick : MonoBehaviour
 
     private void Movement()
     { // 조금씩 벽돌이 내려오게 하기
-        // 내려오는 벽돌이랑 공이랑 부딯쳤을때 공의 속도가
-        // 줄어드는지 보고싶은데 벽돌이 안내려오네
-        Vector2 vectorZero = Vector2.zero;
-
-        transform.position = Vector2.SmoothDamp(transform.position
-            , transform.position + new Vector3(0, -1), ref vectorZero, 5f);
+        transform.position = Vector2.MoveTowards(transform.position
+            , transform.position + new Vector3(0, -1), 0.1f * Time.deltaTime);
     }
 
     public void Dead()
