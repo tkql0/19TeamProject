@@ -810,10 +810,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 521674639}
     m_Modifications:
-    - target: {fileID: -6812446703841235930, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3992471059284513412, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -859,8 +855,8 @@ PrefabInstance:
       value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
-      propertyPath: m_Layer
-      value: 7
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

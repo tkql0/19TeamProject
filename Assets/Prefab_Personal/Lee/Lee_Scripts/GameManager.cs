@@ -73,14 +73,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Thread.Sleep(1000);                 // When missed all balls, wait 1sec and launch the next ball 
-            LaunchBall();
+            Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
+            
         }
     }
 
     private void LaunchBall()                 // random direction 
     {
-
+        BallList.Add(Instantiate(Ball,new Vector3(0,-3,0),Quaternion.identity));
     }
 
     public void BallNumber()
