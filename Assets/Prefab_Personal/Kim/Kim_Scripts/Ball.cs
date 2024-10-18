@@ -33,11 +33,15 @@ public class Ball : MonoBehaviour
         if (speed < minSpeed)
         {
             if (Mathf.Abs(rigid2D.velocity.x) < minSpeed)
+            {
                 rigid2D.velocity = new Vector2(Mathf.Sign(rigid2D.velocity.x)
                     * minSpeed, rigid2D.velocity.y);
-            if (Mathf.Abs(rigid2D.velocity.y) < minSpeed)
+            }
+            else if (Mathf.Abs(rigid2D.velocity.y) < minSpeed)
+            {
                 rigid2D.velocity = new Vector2(rigid2D.velocity.x,
                     Mathf.Sign(rigid2D.velocity.y) * minSpeed);
+            }
         }
     }
 
