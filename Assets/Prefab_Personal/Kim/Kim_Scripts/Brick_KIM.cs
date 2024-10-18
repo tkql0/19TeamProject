@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestBrick : MonoBehaviour
+public class Brick_KIM : MonoBehaviour
 {
     public int heart;
     public int score = 5;
