@@ -52,6 +52,15 @@ public class Brick_KIM : MonoBehaviour
 
     public void Dead()
     {
+        int randomDrop = Random.Range(0, 3);
+
+        if (randomDrop == 2)
+        {
+            //int randomItem = Random.Range(0, 아이템 종류);
+
+            //아이템.아이템 생성(randomItem);
+        }
+
         GameManager.Instance.currentScore += score;
         gameObject.SetActive(false);
     }
@@ -62,6 +71,15 @@ public class Brick_KIM : MonoBehaviour
         {
             if (isSpecialLevel)
             { // 특수 레벨일 경우 데미지 감소 없음
+                int randomDrop = Random.Range(0, 3);
+
+                if(randomDrop == 2)
+                {
+                    //int randomItem = Random.Range(0, 아이템 종류);
+
+                    //아이템.아이템 생성(randomItem);
+                }
+
                 return;
             }
 
