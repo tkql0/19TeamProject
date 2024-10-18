@@ -583,6 +583,9 @@ MonoBehaviour:
   highScore: 0
   life: 0
   time: 0
+  isMultiplay: 0
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!4 &1080931989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
