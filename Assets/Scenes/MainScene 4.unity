@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85
@@ -193,6 +197,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1
@@ -312,6 +320,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1
@@ -418,6 +430,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -480,6 +496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8730296853673878797, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -498,6 +518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3
@@ -591,6 +615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -697,6 +725,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.931
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -720,6 +752,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.15
@@ -782,6 +818,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 494789526875503926, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
       value: OrangeBrick3 (1)
@@ -969,6 +1009,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.45
@@ -1031,6 +1075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 168029391109059469, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
       value: GreenBrick2 (1)
@@ -1093,6 +1141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.45
@@ -1155,6 +1207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3
@@ -1328,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 29.932
       objectReference: {fileID: 0}
+    - target: {fileID: 8730296853673878797, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1346,6 +1406,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3
@@ -1408,6 +1472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 1304720278954746018, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
       value: OrangeBrick2 (3)
@@ -1559,6 +1627,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1621,6 +1693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9
@@ -1683,6 +1759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 295906398679808761, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1518441892069230743, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6
@@ -1789,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8730296853673878797, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1851,6 +1935,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1869,6 +1957,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.15
@@ -1931,6 +2023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.15
@@ -1993,6 +2089,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 295906398679808761, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1518441892069230743, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6
@@ -2055,6 +2155,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.75
@@ -2161,6 +2265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8730296853673878797, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2236,6 +2344,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3
@@ -2298,6 +2410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 1304720278954746018, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
       value: OrangeBrick2
@@ -2518,6 +2634,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 168029391109059469, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
       value: GreenBrick2
@@ -2725,6 +2845,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
+--- !u!1 &1118152578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
+  m_PrefabInstance: {fileID: 1118152577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1181311737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2777,6 +2902,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2839,6 +2968,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.931
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2857,6 +2990,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.7
@@ -2951,6 +3088,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3
@@ -3013,6 +3154,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3075,6 +3220,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3
@@ -3241,6 +3390,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.13
@@ -3303,6 +3456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.1
@@ -3370,6 +3527,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 1304720278954746018, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
       value: OrangeBrick2 (1)
@@ -3432,6 +3593,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 1304720278954746018, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
       value: OrangeBrick2 (2)
@@ -3499,6 +3664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 168029391109059469, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
       value: GreenBrick2 (3)
@@ -3618,6 +3787,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 168029391109059469, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
       value: GreenBrick2 (2)
@@ -3724,6 +3897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenBrick
       objectReference: {fileID: 0}
+    - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3742,6 +3919,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1
@@ -3853,6 +4034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3920,6 +4105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5888758132238713681, guid: 179db288f172948edb15c96fe6540e34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3971,6 +4160,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 295906398679808761, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1518441892069230743, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.75
@@ -4037,6 +4230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeBrick (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6954805298741581338, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.11
@@ -4100,6 +4297,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -5488130758292519924, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1492889992915240679, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.15
@@ -4162,6 +4363,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.3
@@ -4268,6 +4473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenBrick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4343,6 +4552,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1
@@ -4405,6 +4618,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 4659717196399504749, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6587868032769925795, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.8
@@ -4467,6 +4684,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: 295906398679808761, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 1518441892069230743, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85
@@ -4529,6 +4750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3
@@ -4595,6 +4820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeBrick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6954805298741581338, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.85
@@ -4657,6 +4886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeBrick
       objectReference: {fileID: 0}
+    - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6954805298741581338, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4715,6 +4948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 691643011}
     m_Modifications:
+    - target: {fileID: -7070518103401405949, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1118152578}
     - target: {fileID: 6712928843871857859, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
