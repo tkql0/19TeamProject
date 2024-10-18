@@ -8,12 +8,17 @@ public class BackButton : MonoBehaviour
 {
     [SerializeField] GameObject GameObject;
     ShiftEffect shiftEffect;
+    AudioSource audioSource;
+    public AudioClip shiftSound;
     private void Awake()
     {
         shiftEffect = GameObject.GetComponent<ShiftEffect>();
+        audioSource = AudioManager.Instance.GetComponent<AudioSource>();
     }
     public void Click()
     {
+    
+        audioSource.PlayOneShot(shiftSound);
         if (SceneManager.GetActiveScene().name == "MenuScene")
         {
             shiftEffect.boardToward = new Vector3(0, -400, 0);

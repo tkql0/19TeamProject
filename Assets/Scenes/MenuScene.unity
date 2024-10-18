@@ -489,6 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObject: {fileID: 2091108635}
+  shiftSound: {fileID: 8300000, guid: 4faafcb3a6be773409b867501dbe8b35, type: 3}
 --- !u!114 &2091108637
 MonoBehaviour:
   m_ObjectHideFlags: 0
