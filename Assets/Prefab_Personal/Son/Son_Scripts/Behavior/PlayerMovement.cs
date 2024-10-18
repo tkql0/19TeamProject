@@ -7,22 +7,34 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D movementRigidbody;
     private ActionEventController controller;
+    private PaddleStats paddleStats;
     private Vector2 movedirection = Vector2.zero;
+    private float applySpeed;
+
 
     private void Awake()
     {
         movementRigidbody = GetComponent<Rigidbody2D>();   
         controller = GetComponent<ActionEventController>();
+        paddleStats = GetComponent<PaddleStats>();
     }
     // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
         controller.OnMoveEvent += OnMovement;
+        paddleStats.OnSpeedChangedEvent += OnSpeed;
     }
+
+    private void OnDisable()
+    {
+        controller.OnMoveEvent -= OnMovement;
+        paddleStats.OnSpeedChangedEvent -= OnSpeed;
+    }
+
 
     private void FixedUpdate()
     {
-        ApplyMovement(movedirection);
+        ApplyMovement(movedirection, applySpeed);
     }
 
     private void OnMovement(Vector2 inDirection)
@@ -30,9 +42,14 @@ public class PlayerMovement : MonoBehaviour
         movedirection = inDirection;
     }
 
-    private void ApplyMovement(Vector2 inDirection)
+    private void OnSpeed(float speed)
+    {
+        applySpeed = speed;
+    }
+
+    private void ApplyMovement(Vector2 inDirection, float speed)
     {   //TODO : Magic Number --> make PabbleSO.speed
-        inDirection = inDirection * 5;
+        inDirection = inDirection * speed;
         movementRigidbody.velocity = inDirection;
     }
 }
