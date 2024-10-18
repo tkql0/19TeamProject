@@ -14,8 +14,15 @@ public class BackButton : MonoBehaviour
     }
     public void Click()
     {
-        shiftEffect.boardToward = new Vector3(0, 400, 0);
-        Invoke("nextScene",0.3f);
+        if (SceneManager.GetActiveScene().name == "MenuScene")
+        {
+            shiftEffect.boardToward = new Vector3(0, -400, 0);
+        }
+        else if (SceneManager.GetActiveScene().name == "ScoreScene")
+        {
+            shiftEffect.boardToward = new Vector3(0, 400, 0);
+        }
+        Invoke("nextScene",0.23f);
     }
 
     private void nextScene()
