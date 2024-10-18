@@ -38,7 +38,7 @@ public class Item : MonoBehaviour
                 spriteRenderer.sprite = paddleIncrease;
                 break;
         }
-            
+
         _rb2d.velocity = Vector2.down;
     }
 
@@ -62,7 +62,7 @@ public class Item : MonoBehaviour
 
             Destroy(gameObject);
         }
-        
+
     }
 
 }
