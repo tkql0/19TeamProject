@@ -7,20 +7,27 @@ using UnityEngine.SceneManagement;
 public class BackButton : MonoBehaviour
 {
     [SerializeField] GameObject GameObject;
-    ScoreBoard scoreBoard;
+    ShiftEffect shiftEffect;
     private void Awake()
     {
-        scoreBoard = GameObject.GetComponent<ScoreBoard>();
+        shiftEffect = GameObject.GetComponent<ShiftEffect>();
     }
     public void Click()
     {
-        scoreBoard.boardToward = new Vector3(0, 400, 0);
-        Invoke("nextScene",0.5f);
+        shiftEffect.boardToward = new Vector3(0, 400, 0);
+        Invoke("nextScene",0.3f);
     }
 
     private void nextScene()
     {
-        SceneManager.LoadScene("MenuScene");
+        if (SceneManager.GetActiveScene().name == "MenuScene")
+        {
+            SceneManager.LoadScene("ScoreScene");
+        }
+        else if (SceneManager.GetActiveScene().name == "ScoreScene")
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
     }
 
 }

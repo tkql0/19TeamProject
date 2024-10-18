@@ -629,6 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1805271794}
+  - component: {fileID: 1805271795}
   m_Layer: 5
   m_Name: SceneShift
   m_TagString: Untagged
@@ -657,6 +658,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1805271795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805271793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb1bd6dd41ba43428a5835f370c85f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardToward: {x: 0, y: 0, z: 0}
 --- !u!1 &1858090342
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreRecord: {fileID: 2093026031385226684, guid: 1728c9ddee13f5c4eb187109db22829a, type: 3}
   UICanvas: {fileID: 1805271793}
-  boardToward: {x: 0, y: 0, z: 0}
 --- !u!1001 &2028098455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9448dfedfaf5731439c07711120fba69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameObject: {fileID: 1858090342}
+  GameObject: {fileID: 1805271793}
 --- !u!1 &2039241122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1279696583212080846, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}

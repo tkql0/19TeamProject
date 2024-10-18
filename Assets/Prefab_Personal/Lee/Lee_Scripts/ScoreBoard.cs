@@ -10,19 +10,12 @@ public class ScoreBoard : MonoBehaviour
 {
     [SerializeField] GameObject ScoreRecord;
     [SerializeField] GameObject UICanvas;
-    public Vector3 boardToward = Vector3.zero;
     GameObject ScoreText;
     
 
-    private void Awake()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    
 
-    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
-    {
-        boardToward = Vector3.zero;
-    }
+   
 
     // Start is called before the first frame update
     void Start()
@@ -42,9 +35,5 @@ public class ScoreBoard : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        UICanvas.transform.localPosition = Vector3.MoveTowards(UICanvas.transform.localPosition, boardToward, 2000 * Time.deltaTime);
-    }
+    
 }
