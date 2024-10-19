@@ -133,9 +133,6 @@ public class GameManager : MonoBehaviour
         if (isMultiplay)
         {
             GameObject playerObject2 = Instantiate(player2);
-
-            BallList.Add(Instantiate(Ball,
-            playerObject2.transform.position + new Vector3(0, 1), Quaternion.identity));
         }
     }
 }

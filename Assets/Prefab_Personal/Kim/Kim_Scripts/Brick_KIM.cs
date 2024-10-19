@@ -10,14 +10,19 @@ public class Brick_KIM : MonoBehaviour
     //private Animator anim;
     private BoxCollider2D boxCollider;
 
+    private ItemManager itemManager;
+
+    public int itemCount = 0;
+
     public float speed = 0.1f;
 
-    public bool isSpecialLevel;
+    public bool isSpecialLevel_Test;
 
     private void Awake()
     {
         //anim = GetCompoment<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        itemManager = GetComponent<ItemManager>();
     }
 
     private void OnEnable()
@@ -26,7 +31,7 @@ public class Brick_KIM : MonoBehaviour
         //anim.isDie.SetBool(false);
         heart = 1;
         // 게임 레벨이 있는 스크립트에서 받아오기
-        isSpecialLevel = true;
+        isSpecialLevel_Test = true;
     }
 
     private void Update()
@@ -54,11 +59,12 @@ public class Brick_KIM : MonoBehaviour
     {
         int randomDrop = Random.Range(0, 3);
 
-        if (randomDrop == 2)
+        if (randomDrop == 2 && itemCount == 0)
         {
             //int randomItem = Random.Range(0, 아이템 종류);
-
             //아이템.아이템 생성(randomItem);
+            itemManager.SpawnRandomItem(transform.position);
+            itemCount++;
         }
 
         GameManager.Instance.currentScore += score;
@@ -69,7 +75,7 @@ public class Brick_KIM : MonoBehaviour
     {
         if (inCollision.gameObject.TryGetComponent<Ball>(out var outBall))
         {
-            if (isSpecialLevel)
+            if (isSpecialLevel_Test)
             { // 특수 레벨일 경우 데미지 감소 없음
                 int randomDrop = Random.Range(0, 3);
 
@@ -78,6 +84,8 @@ public class Brick_KIM : MonoBehaviour
                     //int randomItem = Random.Range(0, 아이템 종류);
 
                     //아이템.아이템 생성(randomItem);
+                    itemManager.SpawnRandomItem(transform.position);
+                    GameManager.Instance.currentScore += score;
                 }
 
                 return;
