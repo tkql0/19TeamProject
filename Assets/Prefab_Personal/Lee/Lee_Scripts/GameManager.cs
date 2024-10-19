@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+    public bool isGameStart;
+
     private void Awake()
     {
         if (Instance == null)                           // Singletone class

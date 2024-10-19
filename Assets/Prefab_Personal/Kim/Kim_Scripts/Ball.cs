@@ -6,7 +6,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public Rigidbody2D rigid2D;
-    private Vector2 myPos;
+    public Vector2 myPos;
 
     public float minSpeed;
 
@@ -19,10 +19,11 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
-        myPos = transform.position;
-        // TODO :: Reset(spawn Position);
-        Reset(transform.position);
-        LaunchBall();
+        if (GameManager.Instance.isGameStart)
+        {
+            Reset(myPos);
+            LaunchBall();
+        }
     }
 
     private void FixedUpdate()
