@@ -10,21 +10,26 @@ public class PaddleStats : MonoBehaviour
 
     public float length;
     public float moveSpeed;
-
+    public float minLength = 3f;  
+    public float maxLength = 24f;
+    public float minSpeed = 2f;
+    public float maxSpeed = 10f;
+    
     public void Awake()
     {
-        length = 3;
-        moveSpeed = 5;
+        length = 6;
+        moveSpeed = 6;
     }
     public float Length
     {
         get { return length; }
         set
         {
-            if (length != value)
+            float clampedValue = Mathf.Clamp(value, minLength, maxLength);
+            if (length != clampedValue)
             {
-                length = value;
-                OnLengthChangedEvent?.Invoke(value);
+                length = clampedValue;
+                OnLengthChangedEvent?.Invoke(clampedValue);
             }
         }
     }
@@ -33,10 +38,11 @@ public class PaddleStats : MonoBehaviour
         get { return moveSpeed; }
         set
         {
-            if (moveSpeed != value)
+            float clampedValue = Mathf.Clamp(value, minSpeed, maxSpeed);
+            if (moveSpeed != clampedValue)
             {
-                moveSpeed = value;
-                OnSpeedChangedEvent?.Invoke(value);
+                moveSpeed = clampedValue;
+                OnSpeedChangedEvent?.Invoke(clampedValue);
             }
         }
     }

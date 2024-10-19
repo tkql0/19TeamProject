@@ -8,53 +8,44 @@ public class PaddelMovement : MonoBehaviour
 {
     private Rigidbody2D movementRigidbody;
     private GenerateController controller;
-    private PaddleStats paddleStats;
+    private PaddleSpeedChanged paddleSpeedChanged;
     private Vector2 moveDirection = Vector2.zero;
-    private float baseSpeed;
-    private float applySpeed;
+
 
     private void Awake()
     {
         movementRigidbody = GetComponent<Rigidbody2D>();
         controller = GetComponent<GenerateController>();
-        paddleStats = GetComponent<PaddleStats>();
+        paddleSpeedChanged = GetComponent<PaddleSpeedChanged>();
     }
 
     private void OnEnable()
     {
         controller.OnMoveEvent += OnMovement;
-        paddleStats.OnSpeedChangedEvent += OnSpeedChanged;
     }
 
     private void OnDisable()
     {
         controller.OnMoveEvent -= OnMovement;
-        paddleStats.OnSpeedChangedEvent -= OnSpeedChanged;
     }
 
     private void Start()
     {
         movementRigidbody.velocity = Vector2.zero;
-        baseSpeed = paddleStats.MoveSpeed;
     }
 
     private void FixedUpdate()
     {
         ApplyMovement(moveDirection);
     }
-    private void OnMovement(Vector2 direction)
+    private void OnMovement(Vector2 inDirection)
     {
-        moveDirection = direction;
+        moveDirection = inDirection;
     }
 
-    private void OnSpeedChanged(float speed)
+    private void ApplyMovement(Vector2 inDirection)
     {
-        applySpeed = speed;
-    }
-
-    private void ApplyMovement(Vector2 direction)
-    {
-        direction *= baseSpeed + applySpeed;
-        movementRigidbody.velocity = direction;
+        inDirection *= paddleSpeedChanged.currentSpeed;
+        movementRigidbody.velocity = inDirection;
     }
 }
