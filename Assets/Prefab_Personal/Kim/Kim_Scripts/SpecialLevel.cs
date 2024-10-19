@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpecialLevel : MonoBehaviour
 {
-    public ObjectPool pool;
+    public ObjectPool_KIM pool;
 
     public GameObject Brick;
 
@@ -15,7 +15,7 @@ public class SpecialLevel : MonoBehaviour
 
     private void Awake()
     {
-        pool = GetComponent<ObjectPool>();
+        pool = GetComponent<ObjectPool_KIM>();
     }
 
     private void Start()
