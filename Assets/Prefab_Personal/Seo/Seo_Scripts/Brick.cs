@@ -7,6 +7,14 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject ball;
 
     public GameObject bar;
+
+    ItemManager itemManager;
+
+    private bool isCollision = false;
+    private void Awake()
+    {
+        itemManager = GetComponent<ItemManager>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +24,21 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D inCollision)
     {
+        if (isCollision)
+        {
+            return;
+        }
+
+
         if (inCollision.gameObject.layer == 7)
         {
             this.gameObject.SetActive(false);
+            itemManager.SpawnRandomItem(transform.position);
         }
-        else if (inCollision.gameObject == bar)
-        {
-            //게임 ??
-        }
+        //else if (inCollision.gameObject == bar)
+        //{
+        //게임 ??
+        //}
+        isCollision = true;
     }
 }
