@@ -19,15 +19,22 @@ public class Ball : MonoBehaviour
 
     private void OnEnable()
     {
-        if (GameManager.Instance.isGameStart)
+        if (!GameManager.Instance.isGameStart)
         {
-            Reset(myPos);
-            LaunchBall();
+            return;
         }
+
+        Reset(myPos);
+        LaunchBall();
     }
 
     private void FixedUpdate()
     {
+        if (!GameManager.Instance.isGameStart)
+        {
+            return;
+        }
+
         Vector2 moveVec = transform.position;
         float speed = moveVec.magnitude;
 

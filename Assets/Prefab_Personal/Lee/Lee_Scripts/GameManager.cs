@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
-    public bool isGameStart;
+    public bool isGameStart = false;
 
     private void Awake()
     {
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
         life = 3;
         currentScore = 0;
-        LaunchBall();
+        //LaunchBall();
     }
 
     public void StageClear()
@@ -105,9 +105,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void LaunchBall()                 // random direction 
+    private void LaunchBall(Transform InBallPosition)                 // random direction 
     {
-        BallList.Add(Instantiate(Ball, new Vector3(0, -3, 0), Quaternion.identity));
+        BallList.Add(Instantiate(Ball, InBallPosition.position, Quaternion.identity));
     }
 
     public void BallNumber()
@@ -126,10 +126,16 @@ public class GameManager : MonoBehaviour
 
     private void MakePlayer()
     {
-        Instantiate(player1);
+        GameObject playerObject1 = Instantiate(player1);
+
+        BallList.Add(Instantiate(Ball,
+            playerObject1.transform.position + new Vector3(0, 1), Quaternion.identity));
         if (isMultiplay)
         {
-            Instantiate(player2);
+            GameObject playerObject2 = Instantiate(player2);
+
+            BallList.Add(Instantiate(Ball,
+            playerObject2.transform.position + new Vector3(0, 1), Quaternion.identity));
         }
     }
 }
