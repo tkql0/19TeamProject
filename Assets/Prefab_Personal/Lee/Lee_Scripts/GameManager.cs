@@ -10,7 +10,7 @@ using Scene = UnityEngine.SceneManagement.Scene;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    [SerializeField] GameObject Ball;
+    public GameObject Ball;
     public List<GameObject> BallList = new List<GameObject>();
     public List<int> scoreRanking = new List<int>();          //this list will use in ScoreBoard
     public int currentScore;
