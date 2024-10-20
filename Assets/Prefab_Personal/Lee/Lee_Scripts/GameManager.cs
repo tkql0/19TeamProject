@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject Ball;
     public List<GameObject> BallList = new List<GameObject>();
+    public ObjectPool_KIM pool;
     public List<int> scoreRanking = new List<int>();          //this list will use in ScoreBoard
     public int currentScore;
     public int highScore;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         }
         else if (Instance != null) Destroy(gameObject);
 
+        pool = GetComponent<ObjectPool_KIM>();
     }
 
     private void OnEnable()
@@ -81,10 +83,12 @@ public class GameManager : MonoBehaviour
         scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));
     }
 
-    public void MissBall(GameObject Ball)
+    public void MissBall(GameObject inBall)
     {
-        BallList.Remove(Ball);
-        Destroy(Ball);
+        BallList.Remove(inBall);
+        //Destroy(Ball);
+        inBall.SetActive(false);
+
         if (BallList.Count == 0)
         {
             MissAllBall();
@@ -100,36 +104,45 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
+            //Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
+            isGameStart = false;
 
+            GameObject newBall = pool.SpawnFromPool("Ball");
+            BallList.Add(newBall);
         }
     }
 
     private void LaunchBall(Transform InBallPosition)                 // random direction 
     {
-        BallList.Add(Instantiate(Ball, InBallPosition.position, Quaternion.identity));
+        //BallList.Add(Instantiate(Ball, InBallPosition.position, Quaternion.identity));
+        GameObject newBall = pool.SpawnFromPool("Ball");
+        newBall.transform.position = InBallPosition.position;
+        BallList.Add(newBall);
     }
 
-    public void BallNumber()
-    {
+    //public void BallNumber()
+    //{
 
-    }
-    public void BallPower()
-    {
+    //}
+    //public void BallPower()
+    //{
 
-    }
+    //}
 
-    public void PaddleIncrease()
-    {
+    //public void PaddleIncrease()
+    //{
 
-    }
+    //}
 
     private void MakePlayer()
     {
         GameObject playerObject1 = Instantiate(player1);
 
-        BallList.Add(Instantiate(Ball,
-            playerObject1.transform.position + new Vector3(0, 1), Quaternion.identity));
+        //BallList.Add(Instantiate(Ball,
+        //    playerObject1.transform.position + new Vector3(0, 1), Quaternion.identity));
+        GameObject newBall = pool.SpawnFromPool("Ball");
+        BallList.Add(newBall);
+
         if (isMultiplay)
         {
             GameObject playerObject2 = Instantiate(player2);

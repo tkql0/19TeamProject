@@ -22,17 +22,16 @@ public class BallItemEffect : MonoBehaviour
         }
     }
 
-    public void BallIncrease()
+    public void BallCopy()
     {
         int spawnCount = GameManager.Instance.BallList.Count;
-        // 공을 오브젝트폴에 추가 했더니 오류 뜸 나중에 알아볼 예정
+        // 공을 오브젝트폴에 추가 했더니 오류 뜸 나중에 알아볼 예정 - 해결
 
         for (int i = 0; i < spawnCount; i++)
         {
-            GameManager.Instance.BallList[i].TryGetComponent<Ball>(out var outBall);
-
-            GameManager.Instance.BallList.Add(Instantiate(GameManager.Instance.Ball,
-            outBall.transform.position, Quaternion.identity));
+            GameObject newBall = GameManager.Instance.pool.SpawnFromPool("Ball");
+            newBall.transform.position = GameManager.Instance.BallList[i].transform.position;
+            GameManager.Instance.BallList.Add(newBall);
         }
     }
 
