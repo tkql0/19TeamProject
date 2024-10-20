@@ -13,8 +13,11 @@ GameObject:
   - component: {fileID: -6812446703841235930}
   - component: {fileID: -713953040458716015}
   - component: {fileID: -3789086900550920628}
+  - component: {fileID: 6752526031503127706}
+  - component: {fileID: 5169161981866770274}
+  - component: {fileID: 7385321092920684436}
   m_Layer: 7
-  m_Name: Ball
+  m_Name: Ball_Son
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,3 +167,40 @@ MonoBehaviour:
   rigid2D: {fileID: 0}
   minSpeed: 4
   damage: 1
+--- !u!114 &6752526031503127706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569195772484403435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7046ed4de1e4c9549a0d0543750b461e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectHandler: {fileID: 0}
+--- !u!114 &5169161981866770274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569195772484403435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09efe59227df77d47ba39339417a679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7385321092920684436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569195772484403435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eaaca1fd5b7b041b684a72b280f051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

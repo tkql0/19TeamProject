@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class PaddleStats : MonoBehaviour
@@ -8,12 +9,12 @@ public class PaddleStats : MonoBehaviour
     public event Action<float> OnLengthChangedEvent;
     public event Action<float> OnSpeedChangedEvent;
 
-    public float length;
-    public float moveSpeed;
-    public float minLength = 3f;  
-    public float maxLength = 24f;
-    public float minSpeed = 2f;
-    public float maxSpeed = 10f;
+    public float length {  get; private set; }
+    public float moveSpeed { get; private set; }
+    private float minLength = 3f;
+    private float maxLength = 24f;
+    private float minSpeed = 2f;
+    private float maxSpeed = 10f;
     
     public void Awake()
     {
