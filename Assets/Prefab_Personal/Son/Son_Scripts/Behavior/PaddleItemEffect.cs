@@ -47,7 +47,6 @@ public class PaddleItemEffect : MonoBehaviour
 
     private void ApplySpeedChange(float inSpeedValue)
     {
-        stats.moveSpeed += inSpeedValue;
-        Debug.Log(stats.moveSpeed);
+        stats.MoveSpeed += inSpeedValue;
     }
 }

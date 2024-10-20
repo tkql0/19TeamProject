@@ -6,7 +6,7 @@ using UnityEngine;
 public class PaddleSpeedChanged : MonoBehaviour
 {
     private PaddleStats paddleStats;
-    public float currentSpeed; //{ get; private set; }
+    public float currentSpeed { get; private set; }
 
     private void Awake()
     {
@@ -31,9 +31,7 @@ public class PaddleSpeedChanged : MonoBehaviour
 
     private void OnSpeedChanged(float inSpeedValue)
     {
-        Debug.Log(inSpeedValue);
         currentSpeed = inSpeedValue;
-        Debug.Log(currentSpeed);
     }
 
 }
