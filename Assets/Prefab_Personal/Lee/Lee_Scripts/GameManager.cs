@@ -101,8 +101,8 @@ public class GameManager : MonoBehaviour
     public void MissBall(GameObject inBall)
     {
         BallList.Remove(inBall);
-        //Destroy(Ball);
-        inBall.SetActive(false);
+        Destroy(Ball);
+        //inBall.SetActive(false);
 
         if (BallList.Count == 0)
         {

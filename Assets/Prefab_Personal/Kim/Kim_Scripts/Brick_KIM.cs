@@ -12,10 +12,6 @@ public class Brick_KIM : MonoBehaviour
 
     private ItemManager itemManager;
 
-    public int itemCount = 0;
-
-    public float speed = 0.1f;
-
     public bool isSpecialLevel_Test;
 
     private void Awake()
@@ -29,8 +25,6 @@ public class Brick_KIM : MonoBehaviour
     {
         //boxCollider.enabled = true;
         //anim.isDie.SetBool(false);
-        // ê²Œì„ ?ˆë²¨???ˆëŠ” ?¤í¬ë¦½íŠ¸?ì„œ ë°›ì•„?¤ê¸°
-        isSpecialLevel_Test = true;
     }
 
     private void Update()
@@ -39,7 +33,7 @@ public class Brick_KIM : MonoBehaviour
     }
 
     private void Movement()
-    { // ï¿½ï¿½ï¿½İ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½
+    {
         transform.position = Vector2.MoveTowards(transform.position
             , transform.position + new Vector3(0, -1), 0.1f * Time.deltaTime);
     }
@@ -50,49 +44,46 @@ public class Brick_KIM : MonoBehaviour
 
         if (randomDrop == 2)
         {
-            //int randomItem = Random.Range(0, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½);
-            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(randomItem);
             itemManager.SpawnRandomItem(transform.position);
-            itemCount++;
         }
 
         GameManager.Instance.currentScore += score;
-        gameObject.SetActive(false);
     }
 
     public void OnCollisionEnter2D(Collision2D inCollision)
     {
-        if (inCollision.gameObject.TryGetComponent<Ball>(out var outBall))
+        if (!inCollision.gameObject.TryGetComponent<Ball>(out var outBall))
         {
-            if (isSpecialLevel_Test)
-            { // ?¹ìˆ˜ ?ˆë²¨??ê²½ìš° ?°ë?ì§€ ê°ì†Œ ?†ìŒ
-                ItemSpawn();
-                return;
-            }
-            else
-            {
-                if (heart > 0)
-                {
-                    heart -= outBall.damage;
+            return;
+        }
 
-                    if (heart == 0)
-                    {
-                        // ì½œë¼?´ë”ê°€ ?¬ë¼ì§€ê³?ê³µì´ ?µê³¼??ê²ƒì„ ?•ì¸
-                        //boxCollider.enabled = false;
-                        // ? ë‹ˆë©”ì´?˜ì´ ?ˆëŠ” ?¤ë¸Œ?íŠ¸ë¥??ì„±?˜ë©´ ?˜ë‚˜?
-                        //anim.isDie.SetBool(true);
-                        //Invoke("Dead", 2f);
-                        ItemSpawn();
-                    }
+        if (isSpecialLevel_Test)
+        {
+            ItemSpawn();
+        }
+        else
+        {
+            if (heart > 0)
+            {
+                heart -= outBall.damage;
+
+                if (heart == 0)
+                {
+                    //boxCollider.enabled = false;
+                    //anim.isDie.SetBool(true);
+                    //Invoke("Dead", 2f);
+                    ItemSpawn();
                 }
             }
         }
     }
 
-    // ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿?ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿?ï¿½ï¿½È²ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½
     private void OnTriggerEnter2D(Collider2D incollision)
-    { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½Ò´Â°ï¿?
-        GameManager.Instance.GameOver(true);
+    {
+        if (incollision.gameObject.layer == 8)
+        {
+            GameManager.Instance.GameOver(true);
+        }
     }
 }
 
