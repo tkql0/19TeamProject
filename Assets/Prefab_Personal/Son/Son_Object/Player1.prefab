@@ -318,10 +318,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2821977578665597373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b74e3a1b7f63d9142b56a74a4ea1f8d4, type: 3}
+  m_Script: {fileID: 11500000, guid: fa88c9fd6fcc8374f98cee42cfef10e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSpeed: 0
 --- !u!114 &864058835522906248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,12 +333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49976edf30e22434da5c5329f2c97732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 0
-  moveSpeed: 0
-  minLength: 3
-  maxLength: 24
-  minSpeed: 2
-  maxSpeed: 10
 --- !u!1 &3181476015342510004
 GameObject:
   m_ObjectHideFlags: 0

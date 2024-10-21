@@ -29,7 +29,7 @@ public class Brick_KIM : MonoBehaviour
     {
         //boxCollider.enabled = true;
         //anim.isDie.SetBool(false);
-        // 게임 레벨이 있는 스크립트에서 받아오기
+        // 게임 ?�벨???�는 ?�크립트?�서 받아?�기
         isSpecialLevel_Test = true;
     }
 
@@ -65,7 +65,7 @@ public class Brick_KIM : MonoBehaviour
         if (inCollision.gameObject.TryGetComponent<Ball>(out var outBall))
         {
             if (isSpecialLevel_Test)
-            { // 특수 레벨일 경우 데미지 감소 없음
+            { // ?�수 ?�벨??경우 ?��?지 감소 ?�음
                 ItemSpawn();
                 return;
             }
@@ -77,9 +77,9 @@ public class Brick_KIM : MonoBehaviour
 
                     if (heart == 0)
                     {
-                        // 콜라이더가 사라지고 공이 통과는 것을 확인
+                        // 콜라?�더가 ?�라지�?공이 ?�과??것을 ?�인
                         //boxCollider.enabled = false;
-                        // 애니메이션이 있는 오브젝트를 생성하면 되나?
+                        // ?�니메이?�이 ?�는 ?�브?�트�??�성?�면 ?�나?
                         //anim.isDie.SetBool(true);
                         //Invoke("Dead", 2f);
                         ItemSpawn();
@@ -89,10 +89,10 @@ public class Brick_KIM : MonoBehaviour
         }
     }
 
-    // �׷��� ����� �ٴڿ� ����� ��Ȳ�� �־���
+    // �׷��� �����?�ٴڿ� �����?��Ȳ�� �־���
     private void OnTriggerEnter2D(Collider2D incollision)
-    { // ������ �ٴڿ� ��Ҵ°�?
-        GameManager.Instance.GameOver();
+    { // ������ �ٴڿ� ��Ҵ°�?
+        GameManager.Instance.GameOver(true);
     }
 }
 

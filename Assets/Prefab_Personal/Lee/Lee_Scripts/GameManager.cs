@@ -43,12 +43,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
 
         pool = GetComponent<ObjectPool_KIM>();
-        endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();
+        //endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();
     }
 
     private void OnEnable()
     {
-        // ���� �ε�� ������ �̺�Ʈ ���
+        // ���� �ε��?������ �̺�Ʈ ���?
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // �� �̸��� MainScene�� ��� MakePlayer ȣ��
+        // �� �̸��� MainScene�� ���?MakePlayer ȣ��
         if (scene.name == "MainScene")
         {
             Invoke(nameof(MakePlayer), 0f);
@@ -138,7 +138,7 @@ public class GameManager : MonoBehaviour
 
         if (BallList.Count == 0)
         {
-            MissAllBall();
+            //MissAllBall();
         }
     }
 
@@ -154,8 +154,8 @@ public class GameManager : MonoBehaviour
             //Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
             isGameStart = false;
 
-            GameObject newBall = pool.SpawnFromPool("Ball");
-            BallList.Add(newBall);
+            //GameObject newBall = pool.SpawnFromPool("Ball");
+            //BallList.Add(newBall);
         }
     }
 
@@ -179,10 +179,10 @@ public class GameManager : MonoBehaviour
 
     private void MakePlayer()
     {
-        playerObject1 = Instantiate(player1);
-        playerObject1.TryGetComponent<ItemEffectHandler>(out var outHandler);
-        BallItemEffect newBall = SpawnBall(playerObject1.transform).GetComponent<BallItemEffect>();
-        newBall.effectHandler = outHandler;
+        GameObject playerObject1 = Instantiate(player1);
+        //playerObject1.TryGetComponent<ItemEffectHandler>(out var outHandler);
+        //BallItemEffect newBall = SpawnBall(playerObject1.transform).GetComponent<BallItemEffect>();
+        //newBall.effectHandler = outHandler;
         //SpawnBall(playerObject1.transform).TryGetComponent<BallItemEffect>(out var outEffect);
         //outEffect.effectHandler = outHandler;
 
