@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3630314596857602327}
   - component: {fileID: 7286403963213086892}
   - component: {fileID: 3357622158250283857}
-  - component: {fileID: 3265517387671176866}
+  - component: {fileID: 8503980622967671374}
   m_Layer: 0
   m_Name: RedBrick3
-  m_TagString: Untagged
+  m_TagString: RedBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.15}
   m_EdgeRadius: 0
---- !u!114 &3265517387671176866
+--- !u!114 &8503980622967671374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,8 +140,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9123016894269938648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bd1da3d2e6449f4bd6fd3e750f58b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9350638907924497a8b73cd93fb4e583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: 3
   ball: {fileID: 0}
-  bar: {fileID: 5624404945604538584, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
+  bar: {fileID: 0}
+  crackSprites:
+  - {fileID: 1763510885, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
+  - {fileID: -415105233, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}

@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8784995546189602047}
   - component: {fileID: 66394447650519543}
-  - component: {fileID: 1304720278954746018}
   - component: {fileID: -7645043840512536976}
-  - component: {fileID: 1857473920063834222}
+  - component: {fileID: 106130185859363837}
   m_Layer: 0
   m_Name: OrangeBrick2
-  m_TagString: Untagged
+  m_TagString: OrangeBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1304720278954746018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410452545145586899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bd1da3d2e6449f4bd6fd3e750f58b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  bar: {fileID: 5624404945604538584, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
 --- !u!61 &-7645043840512536976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,24 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.09}
   m_EdgeRadius: 0
---- !u!95 &1857473920063834222
-Animator:
-  serializedVersion: 5
+--- !u!114 &106130185859363837
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410452545145586899}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 75c7efab40e8049c8911ae6aa2b0148c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9350638907924497a8b73cd93fb4e583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 2
+  ball: {fileID: 0}
+  bar: {fileID: 0}
+  crackSprites:
+  - {fileID: 88097260, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}

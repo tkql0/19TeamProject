@@ -6,10 +6,79 @@
   <component name="ChangeListManager">
     <list default="true" id="9db4c27a-3d38-4d67-b532-0ce0e96229e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick2_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick3_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/OrangeBrick_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick2_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick3_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick_Broke.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/YellowBrick_Broke.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/Yellowbrick_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Animation/Yellowbrick_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/BlueBrick3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Bottom_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Bottom_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/GreenBrick3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Left_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Left_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/OrangeBrick3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/PupleBrick3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/RedBrick3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Right_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Right_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Top_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/Top_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Object/YellowBrick3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 7.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene 8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene 8.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +99,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Feature__Park",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature__Park&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.17f1/Unity.app/Contents/MacOS/Unity" />
@@ -110,6 +179,9 @@
       <workItem from="1729047100418" duration="1000" />
       <workItem from="1729131303636" duration="1000" />
       <workItem from="1729246101232" duration="3265000" />
+      <workItem from="1729253351830" duration="51000" />
+      <workItem from="1729253416458" duration="694000" />
+      <workItem from="1729256392411" duration="6255000" />
     </task>
     <servers />
   </component>
