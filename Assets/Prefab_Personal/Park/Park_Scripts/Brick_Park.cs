@@ -19,19 +19,19 @@ public class Brick_Park : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         
         // Assign hitPoints based on brick color
-        switch (gameObject.tag) // Assume you have tagged bricks by their color
+        switch (gameObject.tag)
         {
             case "PurpleBrick":
             case "RedBrick":
-                hitPoints = 3; // 3 hits for purple and red bricks
+                hitPoints = 3;
                 break;
             case "OrangeBrick":
             case "YellowBrick":
-                hitPoints = 2; // 2 hits for orange and yellow bricks
+                hitPoints = 2;
                 break;
             case "GreenBrick":
             case "BlueBrick":
-                hitPoints = 1; // 1 hit for green and blue bricks
+                hitPoints = 1;
                 break;
         }
     }
@@ -42,21 +42,14 @@ public class Brick_Park : MonoBehaviour
         {
             TakeDamage();
         }
-        else if (inCollision.gameObject == bar)
-        {
-            //게임 ??
-        }
     }
     
-    // Call this method when the ball hits the brick
     public void TakeDamage()
     {
         hitPoints--;
-        Debug.Log("Brick hit! Remaining HP: " + hitPoints); // Check how many hitPoints are left
 
         if (hitPoints > 0)
         {
-            Debug.Log("Brick cracked! HP: " + hitPoints);
             // Only update sprite for bricks with more than 1 HP (purple, red, orange, yellow)
             if (crackSprites.Length > 0 && (gameObject.tag == "PurpleBrick" || gameObject.tag == "RedBrick" ||
                                             gameObject.tag == "OrangeBrick" || gameObject.tag == "YellowBrick"))
@@ -64,11 +57,21 @@ public class Brick_Park : MonoBehaviour
                 spriteRenderer.sprite = crackSprites[hitPoints - 1]; // Show appropriate cracked sprite
             }
         }
-        else
+        else // hitpoints <= 0
         {
-            Debug.Log("Brick destroyed!");
-            // Destroy the brick when HP reaches 0
-            Destroy(gameObject);
+            Destroy(gameObject);//setactive(false)
+            
+            //Add score
+            GameManager.Instance.currentScore += 10;
+
+            //if bricks is null call gave over methods from game manager
+            if (FindObjectsOfType<Brick_Park>().Length == 1) // Assuming this is the last brick
+            {
+                GameManager.Instance.GameOver(true);
+            }
+            
+            //player 1, player 2 get different score
+            
         }
     }
 }

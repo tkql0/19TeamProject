@@ -23,9 +23,9 @@ public class Ball : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!GameManager.Instance.isGameStart)
+       // if (!GameManager.Instance.isGameStart)
         {
-            return;
+          //  return;
         }
 
         Vector2 moveVec = transform.position;
@@ -56,6 +56,9 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //GameManager.Instance.MissBall(gameObject);
+        if(!collision.TryGetComponent<ItemSOHolder>(out var outItem))
+        {
+            GameManager.Instance.MissBall(gameObject);
+        }
     }
 }

@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
     AudioSource audioSource;
+    public int stageLevel;
     
     public AudioClip menuBGM;
     public AudioClip hammerBGM;

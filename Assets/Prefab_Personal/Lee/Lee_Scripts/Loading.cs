@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Loading : MonoBehaviour
 {
+    int level = AudioManager.Instance.stageLevel;
     private void Awake()
     {
         Invoke("NextScene", 1.5f);
@@ -12,6 +13,13 @@ public class Loading : MonoBehaviour
     
     private void NextScene()
     {
-        SceneManager.LoadScene("MainScene");
+        if (level == 0)
+        {
+            SceneManager.LoadScene("MainScene");
+        }
+        else
+        {
+            SceneManager.LoadScene($"MainScene {level}" );
+        }
     }
 }
