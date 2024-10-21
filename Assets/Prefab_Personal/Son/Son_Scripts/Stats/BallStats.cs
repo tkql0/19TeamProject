@@ -7,13 +7,13 @@ using UnityEngine.UIElements;
 public class BallStats : MonoBehaviour
 {
     public event Action<float> OnSizeChangedEvent;
-
+    public event Action OnBallDoubleEvent;
 
     public float size { get; private set; }
     public float power { get; private set; }
     public bool isDouble { get; private set; }
     public bool isInvincible { get; private set; }
-    
+
     private float minSize = 2f;
     private float maxSize = 10f;
 
@@ -35,6 +35,20 @@ public class BallStats : MonoBehaviour
             {
                 size = clampedValue;
                 OnSizeChangedEvent?.Invoke(clampedValue);
+            }
+        }
+    }
+
+    public bool IsDouble
+    {
+        get { return isDouble; }
+        set
+        {
+            bool isDouble = value;
+            if (isDouble)
+            {
+                isDouble = false;
+                OnBallDoubleEvent?.Invoke();
             }
         }
     }

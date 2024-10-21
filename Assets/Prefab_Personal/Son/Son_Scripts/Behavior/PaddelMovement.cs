@@ -8,7 +8,7 @@ public class PaddelMovement : MonoBehaviour
 {
     private Rigidbody2D movementRigidbody;
     private GenerateController controller;
-    private PaddleSpeedChanged paddleSpeedChanged;
+    private PaddleSpeedChanger paddleSpeedChanger;
     private Vector2 moveDirection = Vector2.zero;
 
 
@@ -16,7 +16,7 @@ public class PaddelMovement : MonoBehaviour
     {
         movementRigidbody = GetComponent<Rigidbody2D>();
         controller = GetComponent<GenerateController>();
-        paddleSpeedChanged = GetComponent<PaddleSpeedChanged>();
+        paddleSpeedChanger = GetComponent<PaddleSpeedChanger>();
     }
 
     private void OnEnable()
@@ -68,7 +68,7 @@ public class PaddelMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 inDirection)
     {
-        inDirection *= paddleSpeedChanged.currentSpeed;
+        inDirection *= paddleSpeedChanger.currentSpeed;
         movementRigidbody.velocity = inDirection;
     }
 }

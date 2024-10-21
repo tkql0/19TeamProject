@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class BallItemEffect : MonoBehaviour
 {
-    public ItemEffectHandler effectHandler;
+    [SerializeField] private ItemEffectHandler effectHandler;
     private BallStats stats;
     private void Awake()
     {
@@ -33,11 +33,6 @@ public class BallItemEffect : MonoBehaviour
 
     private void OnBallChange(BallItemType inPaddleType, float inValue)
     {
-        if(!GameManager.Instance.isGameStart)
-        {
-            return;
-        }
-
         switch (inPaddleType)
         {
             case BallItemType.BallIncreaseSize or BallItemType.BallDecreaseSize:
@@ -60,12 +55,32 @@ public class BallItemEffect : MonoBehaviour
 
     private void ApplyDouble(float inValue)
     {
-        //GameObject newBall =  Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        //newBall.TryGetComponent<BallItemEffect>(out var outEffect);
+        GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
+        if (newBall.TryGetComponent<BallStats>(out var newBallStats))
+        {
+            newBallStats.Size = stats.Size;
+            //newBallStats.currentScale = stats.currentScale;
+        }
+        //newBall.transform.localScale = stats.currentScale;
+        if (newBall.TryGetComponent<BallItemEffect>(out var outEffect))
+        {
+            outEffect.effectHandler = effectHandler;
+        }
 
-        //outEffect.effectHandler = effectHandler;
-
-       GameManager.Instance.SpawnBall(transform).TryGetComponent<BallItemEffect>(out var outEffect);
-        outEffect.effectHandler = effectHandler;
+        //SetBasic(newBall);
+        //newBall.transform.localScale = stats.currentScale;
     }
+
+    //private void SetBasic(GameObject newBall)
+    //{
+    //    newBall.TryGetComponent<BallItemEffect>(out var outEffect);
+    //    Debug.Log("적용전 : " + newBall.transform.localScale);
+    //    if (newBall.transform.localScale == Vector3.zero)
+    //    {
+    //        newBall.transform.localScale = stats.currentScale;
+    //    }
+    //    newBall.transform.localScale = stats.currentScale;
+    //    Debug.Log("적용후 : " + newBall.transform.localScale);
+    //    outEffect.effectHandler = effectHandler;
+    //}
 }
