@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Level_KIM : MonoBehaviour
 {
-    public int level;
-
     public void OpenScene()
     {
-        SceneManager.LoadScene("MainScene " + level.ToString());
+        SceneManager.LoadScene("MainScene_Special ");
     }
 }

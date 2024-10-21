@@ -42,18 +42,16 @@ public class PaddelMovement : MonoBehaviour
         }
         else
         {
-            if(!GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall))
+            if(GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall))
             {
-                return;
-            }
-
-            outBall.transform.position
+                outBall.transform.position
                 = transform.position + new Vector3(0, 1);
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                GameManager.Instance.isGameStart = true;
-                outBall.LaunchBall();
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    GameManager.Instance.isGameStart = true;
+                    outBall.LaunchBall();
+                }
             }
         }
     }

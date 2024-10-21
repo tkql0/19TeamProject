@@ -44,7 +44,7 @@ public class Brick_KIM : MonoBehaviour
             , transform.position + new Vector3(0, -1), 0.1f * Time.deltaTime);
     }
 
-    public void Dead()
+    public void ItemSpawn()
     {
         int randomDrop = Random.Range(0, 3);
 
@@ -66,33 +66,23 @@ public class Brick_KIM : MonoBehaviour
         {
             if (isSpecialLevel_Test)
             { // 특수 레벨일 경우 데미지 감소 없음
-                int randomDrop = Random.Range(0, 3);
-
-                if(randomDrop == 2)
-                {
-                    //int randomItem = Random.Range(0, 아이템 종류);
-
-                    //아이템.아이템 생성(randomItem);
-                    itemManager.SpawnRandomItem(transform.position);
-                    GameManager.Instance.currentScore += score;
-                }
-
+                ItemSpawn();
                 return;
             }
 
             if (heart > 0)
             {
                 heart -= outBall.damage;
-            }
-            else
-            {
-                // 콜라이더가 사라지고 공이 통과는 것을 확인
-                boxCollider.enabled = false;
-                // 애니메이션이 있는 오브젝트를 생성하면 되나?
-                //anim.isDie.SetBool(true);
-                //Invoke("Dead", 2f);
-                Dead();
-                return;
+
+                if(heart == 0)
+                {
+                    // 콜라이더가 사라지고 공이 통과는 것을 확인
+                    //boxCollider.enabled = false;
+                    // 애니메이션이 있는 오브젝트를 생성하면 되나?
+                    //anim.isDie.SetBool(true);
+                    //Invoke("Dead", 2f);
+                    ItemSpawn();
+                }
             }
         }
     }

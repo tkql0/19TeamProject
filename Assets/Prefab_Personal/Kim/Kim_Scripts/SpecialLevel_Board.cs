@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpecialLevel : MonoBehaviour
 {
-    public ObjectPool_KIM pool;
+    //public ObjectPool_KIM pool;
 
     public GameObject Brick;
 
@@ -15,7 +15,7 @@ public class SpecialLevel : MonoBehaviour
 
     private void Awake()
     {
-        pool = GetComponent<ObjectPool_KIM>();
+        //pool = GetComponent<ObjectPool_KIM>();
     }
 
     private void Start()
@@ -59,7 +59,7 @@ public class SpecialLevel : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            GameObject newBrick = pool.SpawnFromPool("Brick");
+            GameObject newBrick = GameManager.Instance.pool.SpawnFromPool("Brick");
             float x = i % 10 * inSpawnNumber - inSpawnDirection;
 
             newBrick.transform.position = new Vector2(x, 4f);

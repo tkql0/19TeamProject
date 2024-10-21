@@ -33,6 +33,11 @@ public class BallItemEffect : MonoBehaviour
 
     private void OnBallChange(BallItemType inPaddleType, float inValue)
     {
+        if(!GameManager.Instance.isGameStart)
+        {
+            return;
+        }
+
         switch (inPaddleType)
         {
             case BallItemType.BallIncreaseSize or BallItemType.BallDecreaseSize:
@@ -60,7 +65,7 @@ public class BallItemEffect : MonoBehaviour
 
         //outEffect.effectHandler = effectHandler;
 
-       GameManager.Instance.LaunchBall(transform).TryGetComponent<BallItemEffect>(out var outEffect);
+       GameManager.Instance.SpawnBall(transform).TryGetComponent<BallItemEffect>(out var outEffect);
         outEffect.effectHandler = effectHandler;
     }
 }

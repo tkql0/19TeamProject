@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject Ball;
     public List<GameObject> BallList = new List<GameObject>();
-    //public ObjectPool_KIM pool;
+    public ObjectPool_KIM pool;
     public List<int> scoreRanking = new List<int>();          //this list will use in ScoreBoard
     public int currentScore;
     public int highScore;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         }
         else if (Instance != null) Destroy(gameObject);
 
-        //pool = GetComponent<ObjectPool_KIM>();
+        pool = GetComponent<ObjectPool_KIM>();
     }
 
     private void OnEnable()
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 씬 이름이 MainScene인 경우 MakePlayer 호출
-        if (scene.name == "MainScene_test")
+        if (scene.name == "MainScene_Special")
         {
             Invoke(nameof(MakePlayer), 0f);
         }
@@ -111,18 +111,17 @@ public class GameManager : MonoBehaviour
             //Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
             isGameStart = false;
 
-            //GameObject newBall = pool.SpawnFromPool("Ball");
-            //BallList.Add(newBall);
-            LaunchBall(playerObject1.transform);
+            GameObject newBall = pool.SpawnFromPool("Ball");
+            BallList.Add(newBall);
         }
     }
 
-    public GameObject LaunchBall(Transform InBallPosition)                 // random direction 
+    public GameObject SpawnBall(Transform InBallPosition)                 // random direction 
     {
-        GameObject newBall = Instantiate(Ball, InBallPosition.position, Quaternion.identity);
-        //GameObject newBall = pool.SpawnFromPool("Ball");
+        //GameObject newBall = Instantiate(Ball, InBallPosition.position, Quaternion.identity);
+        GameObject newBall = pool.SpawnFromPool("Ball");
         BallList.Add(newBall);
-        //newBall.transform.position = InBallPosition.position;
+        newBall.transform.position = InBallPosition.position;
 
         return newBall;
     }
@@ -131,11 +130,10 @@ public class GameManager : MonoBehaviour
     {
         playerObject1 = Instantiate(player1);
         playerObject1.TryGetComponent<ItemEffectHandler>(out var outHandler);
-        //BallItemEffect newBall = pool.SpawnFromPool("Ball").GetComponent<BallItemEffect>();
-        //BallList.Add(newBall.gameObject);
-        //newBall.effectHandler = outHandler;
-        LaunchBall(playerObject1.transform).TryGetComponent<BallItemEffect>(out var outEffect);
-        outEffect.effectHandler = outHandler;
+        BallItemEffect newBall = SpawnBall(playerObject1.transform).GetComponent<BallItemEffect>();
+        newBall.effectHandler = outHandler;
+        //SpawnBall(playerObject1.transform).TryGetComponent<BallItemEffect>(out var outEffect);
+        //outEffect.effectHandler = outHandler;
 
         if (isMultiplay)
         {
