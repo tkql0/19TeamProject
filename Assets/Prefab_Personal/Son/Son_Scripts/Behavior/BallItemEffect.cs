@@ -66,7 +66,7 @@ public class BallItemEffect : MonoBehaviour
         {
             outEffect.effectHandler = effectHandler;
         }
-
+        GameManager.Instance.BallList.Add(newBall);
         //SetBasic(newBall);
         //newBall.transform.localScale = stats.currentScale;
     }
