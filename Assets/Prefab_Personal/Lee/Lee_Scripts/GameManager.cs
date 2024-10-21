@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public int highScore;
     public int life;                                // 0 -> GameOver
     public float time;
-    public bool isMultiplay;                       // flase : 1 player ,  true : 2 players
+    public bool isMultiplay = false;                       // flase : 1 player ,  true : 2 players
 
     public bool isGameStart = false;
 
@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
     {
         life = 3;
         currentScore = 0;
+        GameObject newball = Instantiate(Ball,new Vector3 (0,-3,0),Quaternion.identity);
+        BallList.Add(newball);
     }
 
     public void GameOver(bool clear)
@@ -120,7 +122,7 @@ public class GameManager : MonoBehaviour
         else
         {
             //Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
-            isGameStart = false;
+           // isGameStart = false;
 
             //GameObject newBall = pool.SpawnFromPool("Ball");
             //BallList.Add(newBall);

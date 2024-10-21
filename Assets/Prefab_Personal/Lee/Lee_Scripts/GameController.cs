@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
         {
             Instantiate(player2);
         }
+        GameManager.Instance.StageStart();
     }
     // Start is called before the first frame update
     void Start()
