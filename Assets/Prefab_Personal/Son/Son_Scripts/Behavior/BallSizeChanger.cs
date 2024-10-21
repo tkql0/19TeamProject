@@ -1,37 +1,41 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
-public class PaddelLengthChanged : MonoBehaviour
+public class BallSizeChanger : MonoBehaviour
 {
-    private PaddleStats paddleStats;
+    private BallStats ballStats;
 
     private void Awake()
     {
-        paddleStats = GetComponentInParent<PaddleStats>();
+        ballStats = GetComponent<BallStats>();
     }
+
     private void OnEnable()
     {
-        paddleStats.OnLengthChangedEvent += OnLengthChanged;
+        ballStats.OnSizeChangedEvent += OnSizeChanged;
     }
 
     private void OnDisable()
     {
-        paddleStats.OnLengthChangedEvent -= OnLengthChanged;
+        ballStats.OnSizeChangedEvent -= OnSizeChanged;
     }
 
     private void Start()
     {
         Vector3 newScale = transform.localScale;
-        newScale.x = paddleStats.length;
+        newScale.x = ballStats.size;
+        newScale.y = newScale.x;
         transform.localScale = newScale;
     }
 
-    private void OnLengthChanged(float inScaleValue)
+    private void OnSizeChanged(float inScaleValue)
     {
         Vector3 newScale = transform.localScale;
         newScale.x = inScaleValue;
+        newScale.y = inScaleValue;
         transform.localScale = newScale;
     }
 }
