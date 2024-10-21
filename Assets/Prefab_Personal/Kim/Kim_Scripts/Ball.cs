@@ -56,6 +56,9 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.Instance.MissBall(gameObject);
+        if(!collision.TryGetComponent<ItemSOHolder>(out var outItem))
+        {
+            GameManager.Instance.MissBall(gameObject);
+        }
     }
 }
