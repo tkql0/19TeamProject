@@ -1140,15 +1140,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
   BallList: []
-  pool: {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
   life: 0
   time: 0
   isMultiplay: 0
-  player1: {fileID: 2821977578665597373, guid: 74ed044fc28534241837837162ddbc35, type: 3}
-  player2: {fileID: 5304346020120232401, guid: f9ae32f2588cfb3479a6e48da1f880ac, type: 3}
   isGameStart: 0
   endPanel: {fileID: 0}
   clearTxt: {fileID: 0}
@@ -1386,7 +1383,10 @@ PrefabInstance:
     - {fileID: 7385321092920684436, guid: 31115e6da527a2a48bfb7020aadf8c23, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6569195772484403435, guid: 31115e6da527a2a48bfb7020aadf8c23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1941869488}
   m_SourcePrefab: {fileID: 100100000, guid: 31115e6da527a2a48bfb7020aadf8c23, type: 3}
 --- !u!4 &1289883538 stripped
 Transform:
@@ -1643,6 +1643,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7118522376470903509, guid: 64376f505060a4d05810be44569d7138, type: 3}
   m_PrefabInstance: {fileID: 1032091359}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1941869480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6569195772484403435, guid: 31115e6da527a2a48bfb7020aadf8c23, type: 3}
+  m_PrefabInstance: {fileID: 1289883537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1941869488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941869480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131b11cb5b822c04dbb7ac0672d9a928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectHandler: {fileID: 1779325516}
 --- !u!1001 &2016558352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1759,7 +1777,7 @@ PrefabInstance:
     - target: {fileID: 2123023080836900259, guid: 06019418b129e10458ccec3c8e33d6cf, type: 3}
       propertyPath: items.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 0477aabe23fb9b04eaf6c6b9e249d43c, type: 2}
+      objectReference: {fileID: 11400000, guid: 15597b9f3d302a34889e6841ba5a4f26, type: 2}
     - target: {fileID: 2123023080836900259, guid: 06019418b129e10458ccec3c8e33d6cf, type: 3}
       propertyPath: items.Array.data[3]
       value: 

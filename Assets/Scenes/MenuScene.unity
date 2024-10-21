@@ -1714,15 +1714,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
   BallList: []
-  pool: {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
   life: 0
   time: 0
   isMultiplay: 0
-  player1: {fileID: 0}
-  player2: {fileID: 0}
   isGameStart: 0
   endPanel: {fileID: 0}
   clearTxt: {fileID: 0}
@@ -2876,7 +2873,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4133220153979268263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 00cc6465fab6fbe4c8593cb845470fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1124957959007173879
@@ -2919,7 +2916,7 @@ GameObject:
   - component: {fileID: 2416811407581467773}
   - component: {fileID: 133641506474154072}
   - component: {fileID: 4196751434296261558}
-  - component: {fileID: 6199027729025533025}
+  - component: {fileID: 4710084473115237285}
   m_Layer: 5
   m_Name: MultiPlayButton
   m_TagString: Untagged
@@ -3075,9 +3072,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6199027729025533025}
+      - m_Target: {fileID: 4710084473115237285}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: ToSelectSingle
+        m_MethodName: ToSelectMulti
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3131,6 +3128,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4710084473115237285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789952007148306518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cc6465fab6fbe4c8593cb845470fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &5150152247998508851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3232,18 +3241,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1P / 2P
---- !u!114 &6199027729025533025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2789952007148306518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6295361989344213185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3317,7 +3314,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1119719582830749644}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: ToSelectMulti
+        m_MethodName: ToSelectSingle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

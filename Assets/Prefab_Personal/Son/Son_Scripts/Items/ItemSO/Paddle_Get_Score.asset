@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97b00d32ef7756448a71d1a9c49668b8, type: 3}
-  m_Name: Ball_Invincible
+  m_Name: Paddle_Get_Score
   m_EditorClassIdentifier: 
-  itemType: 0
-  ballType: 3
-  paddleType: 0
-  value: 0
+  itemType: 1
+  ballType: 0
+  paddleType: 4
+  value: 500
   SetLayer: 10
-  itemSprite: {fileID: 21300000, guid: edc1fe9a49817d84b9b43ee824e6753f, type: 3}
+  itemSprite: {fileID: 21300000, guid: 9089122295a4250459223133e544c3da, type: 3}

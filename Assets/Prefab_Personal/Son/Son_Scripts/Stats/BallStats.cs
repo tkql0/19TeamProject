@@ -47,6 +47,7 @@ public class BallStats : MonoBehaviour
             bool isDouble = value;
             if (isDouble)
             {
+                Debug.Log(isDouble);
                 isDouble = false;
                 OnBallDoubleEvent?.Invoke();
             }
