@@ -34,29 +34,6 @@ public class PaddelMovement : MonoBehaviour
         movementRigidbody.velocity = Vector2.zero;
     }
 
-    private void Update()
-    {
-        //if (GameManager.Instance.isGameStart)
-        //{
-        //    return;
-        //}
-        //else
-        //{
-        //    if(GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall))
-        //    {
-        //        outBall.transform.position
-        //        = transform.position + new Vector3(0, 1);
-
-        //        if (Input.GetKeyDown(KeyCode.Space))
-        //        {
-        //            GameManager.Instance.isGameStart = true;
-        //            outBall.LaunchBall();
-        //        }
-        //    }
-        //}
-    }
-
-
     private void FixedUpdate()
     {
         ApplyMovement(moveDirection);

@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class BallDuplicator : MonoBehaviour
 {
-    [SerializeField] public ItemEffectHandler effectHandler;
     private BallStats ballStats;
 
     private void Awake()
@@ -26,11 +25,10 @@ public class BallDuplicator : MonoBehaviour
 
     private void OnBallDuplicte()
     {
-        
         GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
         if (newBall.TryGetComponent<BallStats>(out var newBallStats))
         {
-            newBallStats = ballStats;
+            newBallStats.Size = ballStats.Size;
         }
         GameManager.Instance.BallList.Add(newBall);
     }

@@ -14,7 +14,7 @@ public class GenerateController : MonoBehaviour
         Player2
     }
 
-    [SerializeField] private PlayerType playerType;
+    [SerializeField] public PlayerType playerType;
 
     private PlayerInputAction playerInput;
     private InputActionMap actionMap;
@@ -57,11 +57,4 @@ public class GenerateController : MonoBehaviour
         Vector2 moveValue = value.ReadValue<Vector2>();
         OnMoveEvent?.Invoke(moveValue);
     }
-
-    private void StopMove(InputAction.CallbackContext value)
-    {
-        Vector2 moveValue = value.ReadValue<Vector2>();
-        OnMoveEvent?.Invoke(moveValue);
-    }
-
 }

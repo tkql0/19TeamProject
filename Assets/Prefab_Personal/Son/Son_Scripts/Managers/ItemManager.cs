@@ -16,7 +16,7 @@ public class ItemManager : MonoBehaviour
         }
 
         int randomIndex = Random.Range(0, items.Count);
-        ItemSO selectedItem = items[3];
+        ItemSO selectedItem = items[randomIndex];
 
         CreateItem(selectedItem, inSpawnPosition);
     }

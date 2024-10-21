@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class BallItemEffect : MonoBehaviour
 {
-    [SerializeField] public ItemEffectHandler effectHandler;
+    [SerializeField] public List<ItemEffectHandler> effectHandler;
     private BallStats stats;
     private void Awake()
     {
@@ -19,7 +19,13 @@ public class BallItemEffect : MonoBehaviour
     {
         if (effectHandler != null)
         {
-            effectHandler.OnItemToBallEvent += OnBallChange;
+            foreach (var handler in effectHandler)
+            {
+                if (handler != null)
+                {
+                    handler.OnItemToBallEvent += OnBallChange;
+                }
+            }
         }
     }
 
@@ -27,7 +33,13 @@ public class BallItemEffect : MonoBehaviour
     {
         if (effectHandler != null)
         {
-            effectHandler.OnItemToBallEvent -= OnBallChange;
+            foreach (var handler in effectHandler)
+            {
+                if (handler != null)
+                {
+                    handler.OnItemToBallEvent -= OnBallChange;
+                }
+            }
         }
     }
 
@@ -56,15 +68,5 @@ public class BallItemEffect : MonoBehaviour
     private void ApplyDouble(float inValue)
     {
         stats.IsDouble = true;
-        //GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        //if (newBall.TryGetComponent<BallStats>(out var newBallStats))
-        //{
-        //    newBallStats.Size = stats.Size;
-        //}
-        //if (newBall.TryGetComponent<BallItemEffect>(out var outEffect))
-        //{
-        //    outEffect.effectHandler = effectHandler;
-        //}
-        //GameManager.Instance.BallList.Add(newBall);
     }
 }

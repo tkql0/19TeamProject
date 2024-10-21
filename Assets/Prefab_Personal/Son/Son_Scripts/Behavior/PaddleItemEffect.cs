@@ -56,5 +56,6 @@ public class PaddleItemEffect : MonoBehaviour
     private void ApplyGetScore(float inScoreValue)
     {
         stats.CurrentScore += inScoreValue;
+        GameManager.Instance.currentScore += (int)inScoreValue;
     }
 }

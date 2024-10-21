@@ -10,32 +10,18 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.Instance.player1 = Instantiate(player1);
+        GameObject player1Instance = Instantiate(player1);
+        player1Instance.TryGetComponent<ItemEffectHandler>(out var player1ItemHandler);
+        GameManager.Instance.Ball.TryGetComponent<BallItemEffect>(out var itemEffect);
+        itemEffect.effectHandler.Clear();
+        itemEffect.effectHandler.Add(player1ItemHandler);
+        GameObject player2Instance = null;
         if (GameManager.Instance.isMultiplay)
         {
-            Instantiate(player2);
+            player2Instance = Instantiate(player2);
+            player2Instance.TryGetComponent<ItemEffectHandler>(out var player2ItemHandler);
+            itemEffect.effectHandler.Add(player2ItemHandler);
         }
-        
-
-        GameManager.Instance.player1.TryGetComponent<ItemEffectHandler>(out var player1ItemHandler);
-        GameManager.Instance.Ball.TryGetComponent<BallItemEffect>(out var itemEffect);
-        GameManager.Instance.Ball.TryGetComponent<BallDuplicator>(out var duplicator);
-        itemEffect.effectHandler = player1ItemHandler;
-        duplicator.effectHandler = player1ItemHandler;
         GameManager.Instance.StageStart();
-
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //GameManager.Instance.StageStart();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

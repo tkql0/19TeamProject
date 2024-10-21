@@ -14,6 +14,7 @@ public class BallStats : MonoBehaviour
     public bool isDouble { get; private set; }
     public bool isInvincible { get; private set; }
 
+    public float MaxDoubleNum = 3;
     private float minSize = 2f;
     private float maxSize = 10f;
 
