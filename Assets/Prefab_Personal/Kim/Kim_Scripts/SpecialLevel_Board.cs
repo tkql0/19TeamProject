@@ -59,10 +59,10 @@ public class SpecialLevel : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            GameObject newBrick = GameManager.Instance.pool.SpawnFromPool("Brick");
+            //GameObject newBrick = GameManager.Instance.pool.SpawnFromPool("Brick");
             float x = i % 10 * inSpawnNumber - inSpawnDirection;
 
-            newBrick.transform.position = new Vector2(x, 4f);
+            //newBrick.transform.position = new Vector2(x, 4f);
         }
     }
 }
