@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3789086900550920628}
   - component: {fileID: 6752526031503127706}
   - component: {fileID: 5169161981866770274}
-  - component: {fileID: 7385321092920684436}
+  - component: {fileID: 2400798098734709972}
   m_Layer: 7
   m_Name: Ball_Son
   m_TagString: Untagged
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09efe59227df77d47ba39339417a679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7385321092920684436
+--- !u!114 &2400798098734709972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

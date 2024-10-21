@@ -10,7 +10,7 @@ public class BallStats : MonoBehaviour
 
 
     public float size { get; private set; }
-    public float power { get; private set; }  //--> 만들어 두기만?
+    public float power { get; private set; }
     public bool isDouble { get; private set; }
     public bool isInvincible { get; private set; }
     

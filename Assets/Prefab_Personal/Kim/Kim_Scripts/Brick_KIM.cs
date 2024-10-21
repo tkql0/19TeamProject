@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Brick_KIM : MonoBehaviour
 {
-    public int heart;
+    public int heart = 1;
     public int score = 5;
 
     //private Animator anim;
@@ -29,7 +29,6 @@ public class Brick_KIM : MonoBehaviour
     {
         boxCollider.enabled = true;
         //anim.isDie.SetBool(false);
-        heart = 1;
         // 게임 레벨이 있는 스크립트에서 받아오기
         isSpecialLevel_Test = false;
     }
@@ -91,7 +90,8 @@ public class Brick_KIM : MonoBehaviour
                 boxCollider.enabled = false;
                 // 애니메이션이 있는 오브젝트를 생성하면 되나?
                 //anim.isDie.SetBool(true);
-                Invoke("Dead", 2f);
+                //Invoke("Dead", 2f);
+                Dead();
                 return;
             }
         }

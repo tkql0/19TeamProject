@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class BallItemEffect : MonoBehaviour
 {
-    [SerializeField] private ItemEffectHandler effectHandler;
+    public ItemEffectHandler effectHandler;
     private BallStats stats;
     private void Awake()
     {
@@ -55,9 +55,12 @@ public class BallItemEffect : MonoBehaviour
 
     private void ApplyDouble(float inValue)
     {
-        GameObject newBall =  Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        newBall.TryGetComponent<BallItemEffect>(out var outEffect);
+        //GameObject newBall =  Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
+        //newBall.TryGetComponent<BallItemEffect>(out var outEffect);
 
+        //outEffect.effectHandler = effectHandler;
+
+       GameManager.Instance.LaunchBall(transform).TryGetComponent<BallItemEffect>(out var outEffect);
         outEffect.effectHandler = effectHandler;
     }
 }

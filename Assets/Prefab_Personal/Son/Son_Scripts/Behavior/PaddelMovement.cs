@@ -42,7 +42,10 @@ public class PaddelMovement : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall);
+            if(!GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall))
+            {
+                return;
+            }
 
             outBall.transform.position
                 = transform.position + new Vector3(0, 1);
