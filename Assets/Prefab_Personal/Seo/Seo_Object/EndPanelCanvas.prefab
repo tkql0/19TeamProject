@@ -448,6 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castingImage: {fileID: 6128383919462446388}
   scoreText: {fileID: 5527691021047027789}
+  clearText: {fileID: 8244641261774072359}
 --- !u!222 &572868210594102496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1322,6 +1323,7 @@ GameObject:
   - component: {fileID: 5896129667667224389}
   - component: {fileID: 141873481450970304}
   - component: {fileID: 5811599702018348249}
+  - component: {fileID: 9146203269510596163}
   m_Layer: 5
   m_Name: EndImage
   m_TagString: Untagged
@@ -1413,3 +1415,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9146203269510596163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9085618123506118919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e2572e58bb74f9eb2b57c9fd81199a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

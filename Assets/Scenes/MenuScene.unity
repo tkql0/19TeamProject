@@ -1328,10 +1328,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 172293694635849700, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1693007316730905432, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: failBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 0efd8701bf913474b94de50a7b487f4a, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: menuBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: abcc680246fa3bc4790db5a18a28b1c2, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: clearBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: e6a608b944104e34db6dca8bbe90a50f, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: startBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 87f9fd7a2ba8c474993e6756b765eaa1, type: 3}
+    - target: {fileID: 3237162703405192631, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
+      propertyPath: hammerBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 12c177d371dd44799b047fc7e723e3c0, type: 3}
     - target: {fileID: 6463964314445474507, guid: f4edcb7745314854fbfe9203d4ff3546, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1714,21 +1738,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
   BallList: []
-  pool: {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
   life: 0
   time: 0
   isMultiplay: 0
-  player1: {fileID: 0}
-  player2: {fileID: 0}
   isGameStart: 0
-  endPanel: {fileID: 0}
-  clearTxt: {fileID: 0}
-  endPanelController: {fileID: 0}
-  castings: []
-  endAnimation: {fileID: 0}
+  endPanel: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
+  castings:
+  - {fileID: 21300000, guid: 34d1034da6a2d4690a4def038da86308, type: 3}
+  - {fileID: 21300000, guid: 7d2e25c3b301346748625965adb9029b, type: 3}
+  - {fileID: 21300000, guid: f905eea9d2168428a98ad41968a62478, type: 3}
+  - {fileID: 21300000, guid: 262a2f7e2ae01485d916d56190a26a60, type: 3}
 --- !u!1 &1781877307
 GameObject:
   m_ObjectHideFlags: 0

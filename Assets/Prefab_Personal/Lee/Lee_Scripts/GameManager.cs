@@ -23,10 +23,8 @@ public class GameManager : MonoBehaviour
     public bool isGameStart = false;
 
     public GameObject endPanel;
-    public GameObject clearTxt;
-    public EndPanelController endPanelController;
+    private EndPanelController endPanelController;
     public List<Sprite> castings;
-    public GameObject endAnimation;
     private EndPanelAnimationController endpanelanimation;
 
     private void Awake()
@@ -40,7 +38,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
 
         //pool = GetComponent<ObjectPool_KIM>();
-        //endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();
+        endPanelController = endPanel.GetComponent<EndPanelController>();
+        endpanelanimation = endPanel.GetComponentInChildren<EndPanelAnimationController>();
     }
 
     public void StageStart()
