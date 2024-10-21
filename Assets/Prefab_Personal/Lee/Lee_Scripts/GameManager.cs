@@ -13,15 +13,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public GameObject Ball;
     public List<GameObject> BallList = new List<GameObject>();
-    public ObjectPool_KIM pool;
     public List<int> scoreRanking = new List<int>();          //this list will use in ScoreBoard
     public int currentScore;
     public int highScore;
     public int life;                                // 0 -> GameOver
     public float time;
     public bool isMultiplay;                       // flase : 1 player ,  true : 2 players
-    public GameObject player1;
-    public GameObject player2;
 
     public bool isGameStart = false;
 
@@ -31,10 +28,10 @@ public class GameManager : MonoBehaviour
     public List<Sprite> castings;
     public GameObject endAnimation;
     private EndPanelAnimationController endpanelanimation;
-    
+
     private void Awake()
     {
-        if (Instance == null)                           // Singletone class
+        if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
@@ -42,45 +39,16 @@ public class GameManager : MonoBehaviour
         else if (Instance != null) Destroy(gameObject);
         Time.timeScale = 1f;
 
-        pool = GetComponent<ObjectPool_KIM>();
+        //pool = GetComponent<ObjectPool_KIM>();
         //endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();
-    }
-
-    private void OnEnable()
-    {
-        // ���� �ε��?������ �̺�Ʈ ���?
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        // �̺�Ʈ ����
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-
-        
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // �� �̸��� MainScene�� ���?MakePlayer ȣ��
-        if (scene.name == "MainScene")
-        {
-            Invoke(nameof(MakePlayer), 0f);
-        }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void StageStart()
     {
         life = 3;
         currentScore = 0;
-        //LaunchBall();
     }
-    
+
     public void GameOver(bool clear)
     {
         EndPanel(clear);
@@ -90,12 +58,12 @@ public class GameManager : MonoBehaviour
         endPanelController.SetScore(currentScore);
         endPanelController.SetCastingImage(castings[3]);
         endpanelanimation.Down();
-        
+
         highScore = Mathf.Max(highScore, currentScore);
         scoreRanking.Add(currentScore);
         scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));
     }
-    
+
     public void EndPanel(bool clear)
     {
         if (clear)
@@ -161,7 +129,7 @@ public class GameManager : MonoBehaviour
 
     //public GameObject SpawnBall(Transform InBallPosition)                 // random direction 
     //{
-    //    //GameObject newBall = Instantiate(Ball, InBallPosition.position, Quaternion.identity);
+    //    GameObject newBall = Instantiate(Ball, InBallPosition.position, Quaternion.identity);
     //    GameObject newBall = pool.SpawnFromPool("Ball");
     //    BallList.Add(newBall);
     //    newBall.transform.position = InBallPosition.position;
@@ -169,26 +137,8 @@ public class GameManager : MonoBehaviour
     //    return newBall;
     //}
 
-    private void LaunchBall(Transform InBallPosition)                 // random direction 
+    private void MakeBall()
     {
-        //BallList.Add(Instantiate(Ball, InBallPosition.position, Quaternion.identity));
-        GameObject newBall = pool.SpawnFromPool("Ball");
-        newBall.transform.position = InBallPosition.position;
-        BallList.Add(newBall);
-    }
-
-    private void MakePlayer()
-    {
-        GameObject playerObject1 = Instantiate(player1);
-        //playerObject1.TryGetComponent<ItemEffectHandler>(out var outHandler);
-        //BallItemEffect newBall = SpawnBall(playerObject1.transform).GetComponent<BallItemEffect>();
-        //newBall.effectHandler = outHandler;
-        //SpawnBall(playerObject1.transform).TryGetComponent<BallItemEffect>(out var outEffect);
-        //outEffect.effectHandler = outHandler;
-
-        if (isMultiplay)
-        {
-            GameObject playerObject2 = Instantiate(player2);
-        }
+        Instantiate(BallList[0]);
     }
 }
