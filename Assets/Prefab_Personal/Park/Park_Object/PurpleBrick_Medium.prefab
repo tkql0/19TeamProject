@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2698620066602472625}
   - component: {fileID: 4814601744089622560}
   m_Layer: 0
-  m_Name: PurpleBrick2
+  m_Name: PurpleBrick_Medium
   m_TagString: PurpleBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,8 +148,9 @@ MonoBehaviour:
   ball: {fileID: 0}
   bar: {fileID: 0}
   crackSprites:
-  - {fileID: -248753641, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
   - {fileID: -1187597828, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
+  - {fileID: -248753641, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
+  currentScore: {fileID: 0}
 --- !u!114 &4814601744089622560
 MonoBehaviour:
   m_ObjectHideFlags: 0

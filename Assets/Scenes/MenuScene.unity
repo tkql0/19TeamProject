@@ -673,6 +673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1279696583212080846, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1714,21 +1718,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
   BallList: []
-  pool: {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
   life: 0
   time: 0
   isMultiplay: 0
-  player1: {fileID: 0}
-  player2: {fileID: 0}
   isGameStart: 0
-  endPanel: {fileID: 0}
-  clearTxt: {fileID: 0}
-  endPanelController: {fileID: 0}
+  endPanel: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
+  clearTxt: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
+  endPanelController: {fileID: 1513061091409947579, guid: 692360898c7ac4889874dc4084092d01, type: 3}
   castings: []
-  endAnimation: {fileID: 0}
+  endAnimation: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
 --- !u!1 &1781877307
 GameObject:
   m_ObjectHideFlags: 0

@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (6)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -308,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (5)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (1)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -502,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (8)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -576,7 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (8)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -642,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (1)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -903,7 +903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (8)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -977,7 +977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (5)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1043,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (2)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -1209,7 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (7)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -1316,7 +1316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (7)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1346,7 +1346,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 783144543444187351, guid: 322c0a2d27cf74869a7a7b18a9a8698f, type: 3}
       propertyPath: m_Name
-      value: PupleBrick2 (1)
+      value: PurpleBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 2786495284293412075, guid: 322c0a2d27cf74869a7a7b18a9a8698f, type: 3}
       propertyPath: ball
@@ -1456,7 +1456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (6)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -1561,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4144277067671416129, guid: 2f05f01f031d94cdcad085c567e9aad2, type: 3}
       propertyPath: m_Name
-      value: RedBrick (1)
+      value: RedBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 7014704011361610452, guid: 2f05f01f031d94cdcad085c567e9aad2, type: 3}
       propertyPath: ball
@@ -1671,7 +1671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (8)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -1745,7 +1745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (4)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1771,7 +1771,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (1)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -1853,7 +1853,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick2 (1)
+      value: OrangeBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 8784995546189602047, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1923,7 +1923,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4200536029365789735, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick (1)
+      value: OrangeBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: ball
@@ -2033,7 +2033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (4)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -2169,7 +2169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (5)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -2243,7 +2243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (4)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -2281,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4200536029365789735, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick
+      value: OrangeBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: ball
@@ -2351,7 +2351,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2465,7 +2465,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9091884741368458479, guid: 0fd0483ac41944f90bfa264c993d018a, type: 3}
       propertyPath: m_Name
-      value: RedBrick2 (1)
+      value: RedBrick_Medium
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2531,7 +2531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (3)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2654,7 +2654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (2)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2720,7 +2720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2786,7 +2786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (5)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -2873,7 +2873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2943,7 +2943,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (6)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3179,7 +3179,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (7)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3301,7 +3301,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (3)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3327,7 +3327,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (4)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3397,7 +3397,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4441149520145700575, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
       propertyPath: m_Name
-      value: YellowBrick2 (1)
+      value: YellowBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4858685676253011001, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
       propertyPath: bar
@@ -3511,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -3541,7 +3541,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (1)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3607,7 +3607,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (8)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3689,7 +3689,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 1410452545145586899, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick2
+      value: OrangeBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 8784995546189602047, guid: 2aecc0921b6374f05846c9a24ee96d94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3903,7 +3903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3 (7)
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3969,7 +3969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4043,7 +4043,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (4)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4065,7 +4065,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3610922485071422300, guid: 21a1c4177046141cd8c9b2823e10c64e, type: 3}
       propertyPath: m_Name
-      value: PupleBrick (1)
+      value: PurpleBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 4465486182602037746, guid: 21a1c4177046141cd8c9b2823e10c64e, type: 3}
       propertyPath: bar
@@ -4139,7 +4139,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4441149520145700575, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
       propertyPath: m_Name
-      value: YellowBrick2
+      value: YellowBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 4858685676253011001, guid: 344ac26e1e2094776897944879d1f05e, type: 3}
       propertyPath: bar
@@ -4262,7 +4262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (6)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4328,7 +4328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (1)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -4362,7 +4362,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -4441,7 +4441,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (5)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -4555,7 +4555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2128813404011105123, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: m_Name
-      value: YellowBrick3 (3)
+      value: YellowBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4578514506073080256, guid: 3ddcc8eba37424219b2e8ead77c49374, type: 3}
       propertyPath: bar
@@ -4813,7 +4813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9028105973788315029, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_Name
-      value: YellowBrick (1)
+      value: YellowBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4875,7 +4875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (2)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -4953,7 +4953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9028105973788315029, guid: ff8f1737fa6a9405a8b04dd6bcc77d1d, type: 3}
       propertyPath: m_Name
-      value: YellowBrick
+      value: YellowBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5070,7 +5070,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (6)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5136,7 +5136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (4)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5210,7 +5210,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (7)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5276,7 +5276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (6)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -5358,7 +5358,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9123016894269938648, guid: c921ad7a270b044ba991c535b8af37c5, type: 3}
       propertyPath: m_Name
-      value: RedBrick3 (2)
+      value: RedBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5424,7 +5424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (8)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5547,7 +5547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142759287499598033, guid: 6787aa3afb64c4fe7be67c81b126d1de, type: 3}
       propertyPath: m_Name
-      value: GreenBrick3 (5)
+      value: GreenBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5569,7 +5569,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2 (1)
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5679,7 +5679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3 (7)
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -5709,7 +5709,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3610922485071422300, guid: 21a1c4177046141cd8c9b2823e10c64e, type: 3}
       propertyPath: m_Name
-      value: PupleBrick
+      value: PurpleBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 4465486182602037746, guid: 21a1c4177046141cd8c9b2823e10c64e, type: 3}
       propertyPath: bar
@@ -5791,7 +5791,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 783144543444187351, guid: 322c0a2d27cf74869a7a7b18a9a8698f, type: 3}
       propertyPath: m_Name
-      value: PupleBrick2
+      value: PurpleBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 2786495284293412075, guid: 322c0a2d27cf74869a7a7b18a9a8698f, type: 3}
       propertyPath: ball
@@ -5901,7 +5901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 745908618640276186, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: m_Name
-      value: PupleBrick3
+      value: PurpleBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 4754463915880985891, guid: 714ce52ed91854d61b5c033b5fd57d5b, type: 3}
       propertyPath: bar
@@ -5939,7 +5939,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4144277067671416129, guid: 2f05f01f031d94cdcad085c567e9aad2, type: 3}
       propertyPath: m_Name
-      value: RedBrick
+      value: RedBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 7014704011361610452, guid: 2f05f01f031d94cdcad085c567e9aad2, type: 3}
       propertyPath: ball
@@ -6057,7 +6057,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 9091884741368458479, guid: 0fd0483ac41944f90bfa264c993d018a, type: 3}
       propertyPath: m_Name
-      value: RedBrick2
+      value: RedBrick_Medium
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

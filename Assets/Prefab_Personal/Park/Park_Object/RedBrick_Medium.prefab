@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5651406698075360117}
   - component: {fileID: -3600169058644052193}
   m_Layer: 0
-  m_Name: RedBrick2
+  m_Name: RedBrick_Medium
   m_TagString: RedBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (2)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,7 +203,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (3)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (10)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (2)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -458,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (4)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -532,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (9)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -606,7 +606,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (6)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -672,7 +672,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (9)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -831,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (1)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1191,7 +1191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637225353872385412, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
       propertyPath: m_Name
-      value: BlueBrick3
+      value: BlueBrick_Large
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (7)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -1353,7 +1353,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (8)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -1427,7 +1427,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (7)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1805,7 +1805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (1)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -1839,7 +1839,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4200536029365789735, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick (1)
+      value: OrangeBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: ball
@@ -2017,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (4)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2155,7 +2155,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2278,7 +2278,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (5)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -2352,7 +2352,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -2462,7 +2462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (3)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -2497,7 +2497,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (2)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -2608,7 +2608,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4200536029365789735, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick
+      value: OrangeBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 5018974207077681922, guid: 04f35eadc460945578b168043213fd34, type: 3}
       propertyPath: ball
@@ -2803,7 +2803,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (5)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2905,7 +2905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -2935,7 +2935,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (10)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3070,7 +3070,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (1)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
@@ -3144,7 +3144,7 @@ PrefabInstance:
       objectReference: {fileID: 1118152578}
     - target: {fileID: 2166122048975076580, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: m_Name
-      value: OrangeBrick3 (3)
+      value: OrangeBrick_Large
       objectReference: {fileID: 0}
     - target: {fileID: 6508715018357872995, guid: 8dd331fb3fcb143b8bf49784b30de755, type: 3}
       propertyPath: bar
