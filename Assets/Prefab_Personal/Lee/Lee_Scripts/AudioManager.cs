@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     
     public AudioClip menuBGM;
     public AudioClip hammerBGM;
+    public AudioClip startBGM;
     public AudioClip failBGM;
     public AudioClip clearBGM;
 
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
     {
         MenuBGM,
         FailBGM,
+        StartBGM,
         ClearBGM,
         HammerBGM
     }
@@ -52,6 +54,9 @@ public class AudioManager : MonoBehaviour
             case AudioType.FailBGM:
                 audioSource.clip = failBGM;
                 audioSource.Play();
+                break;
+            case AudioType.StartBGM:
+                audioSource.clip = startBGM;
                 break;
             case AudioType.ClearBGM:
                 audioSource.clip = clearBGM;
