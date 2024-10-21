@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 66394447650519543}
   - component: {fileID: -7645043840512536976}
   - component: {fileID: 106130185859363837}
+  - component: {fileID: 1569950134962740472}
   m_Layer: 0
   m_Name: OrangeBrick2
   m_TagString: OrangeBrick
@@ -148,3 +149,24 @@ MonoBehaviour:
   bar: {fileID: 0}
   crackSprites:
   - {fileID: 88097260, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
+--- !u!114 &1569950134962740472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410452545145586899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d08c141f17dc414ca05ce6b94160cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: ab305b5b360a44c4c9820489b26bfc68, type: 2}
+  - {fileID: 11400000, guid: b93e40dab5fdc7543b33c31ae7381025, type: 2}
+  - {fileID: 11400000, guid: 0477aabe23fb9b04eaf6c6b9e249d43c, type: 2}
+  - {fileID: 11400000, guid: 53b9e576f986a8b4bbb93adbf91fa280, type: 2}
+  - {fileID: 11400000, guid: 1c8475e49bc749544aefff70c6fd473b, type: 2}
+  - {fileID: 11400000, guid: 87c5b0a409ba8584c994bd76ecb1a6cc, type: 2}
+  - {fileID: 11400000, guid: 5d880746a8b4e62478656fb44525cd97, type: 2}
+  - {fileID: 11400000, guid: 6a55708c7269564408507f145930aedd, type: 2}
