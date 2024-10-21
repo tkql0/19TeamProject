@@ -8,7 +8,7 @@ public class Brick_KIM : MonoBehaviour
     public int score = 5;
 
     //private Animator anim;
-    private BoxCollider2D boxCollider;
+    //private BoxCollider2D boxCollider;
 
     private ItemManager itemManager;
 
@@ -21,16 +21,16 @@ public class Brick_KIM : MonoBehaviour
     private void Awake()
     {
         //anim = GetCompoment<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        //boxCollider = GetComponent<BoxCollider2D>();
         itemManager = GetComponent<ItemManager>();
     }
 
     private void OnEnable()
     {
-        boxCollider.enabled = true;
+        //boxCollider.enabled = true;
         //anim.isDie.SetBool(false);
         // 게임 레벨이 있는 스크립트에서 받아오기
-        isSpecialLevel_Test = false;
+        isSpecialLevel_Test = true;
     }
 
     private void Update()
@@ -69,19 +69,21 @@ public class Brick_KIM : MonoBehaviour
                 ItemSpawn();
                 return;
             }
-
-            if (heart > 0)
+            else
             {
-                heart -= outBall.damage;
-
-                if(heart == 0)
+                if (heart > 0)
                 {
-                    // 콜라이더가 사라지고 공이 통과는 것을 확인
-                    //boxCollider.enabled = false;
-                    // 애니메이션이 있는 오브젝트를 생성하면 되나?
-                    //anim.isDie.SetBool(true);
-                    //Invoke("Dead", 2f);
-                    ItemSpawn();
+                    heart -= outBall.damage;
+
+                    if (heart == 0)
+                    {
+                        // 콜라이더가 사라지고 공이 통과는 것을 확인
+                        //boxCollider.enabled = false;
+                        // 애니메이션이 있는 오브젝트를 생성하면 되나?
+                        //anim.isDie.SetBool(true);
+                        //Invoke("Dead", 2f);
+                        ItemSpawn();
+                    }
                 }
             }
         }
