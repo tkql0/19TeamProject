@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     public void GameOver(bool clear)
     {
         EndPanel(clear);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         endPanel.SetActive(true);
         endPanelController.ClearText(clear);
         endPanelController.SetScore(currentScore);
@@ -103,12 +103,12 @@ public class GameManager : MonoBehaviour
     public void MissBall(GameObject inBall)
     {
         BallList.Remove(inBall);
-        //Destroy(Ball);
-        inBall.SetActive(false);
+        Destroy(Ball);
+        
 
         if (BallList.Count == 0)
         {
-            //MissAllBall();
+            MissAllBall();
         }
     }
 
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            //Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
+            Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
            // isGameStart = false;
 
             //GameObject newBall = pool.SpawnFromPool("Ball");
@@ -139,8 +139,10 @@ public class GameManager : MonoBehaviour
     //    return newBall;
     //}
 
-    private void MakeBall()
+   
+    private void LaunchBall()
     {
-        Instantiate(BallList[0]);
+        GameObject newball = Instantiate(Ball, new Vector3(0, -3, 0), Quaternion.identity);
+        BallList.Add(newball);
     }
 }
