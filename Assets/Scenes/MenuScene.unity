@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd374fe31ee0f497cbb65a78bd64fb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
+  Ball: {fileID: 6569195772484403435, guid: 31115e6da527a2a48bfb7020aadf8c23, type: 3}
   BallList: []
   scoreRanking: 
   currentScore: 0

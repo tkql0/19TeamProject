@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BallDuplicator : MonoBehaviour
 {
-    [SerializeField] private ItemEffectHandler effectHandler;
+    [SerializeField] public ItemEffectHandler effectHandler;
     private BallStats ballStats;
 
     private void Awake()
@@ -29,14 +29,7 @@ public class BallDuplicator : MonoBehaviour
         GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
         if (newBall.TryGetComponent<BallStats>(out var newBallStats))
         {
-            newBallStats.Size = ballStats.Size;
-        }
-        if (newBall.TryGetComponent<BallDuplicator>(out var outEffect))
-        {
-            if (effectHandler != null)
-            {
-                outEffect.effectHandler = effectHandler;
-            }
+            newBallStats = ballStats;
         }
         GameManager.Instance.BallList.Add(newBall);
     }

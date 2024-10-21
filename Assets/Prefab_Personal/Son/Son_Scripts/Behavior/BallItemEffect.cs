@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class BallItemEffect : MonoBehaviour
 {
-    [SerializeField] private ItemEffectHandler effectHandler;
+    [SerializeField] public ItemEffectHandler effectHandler;
     private BallStats stats;
     private void Awake()
     {

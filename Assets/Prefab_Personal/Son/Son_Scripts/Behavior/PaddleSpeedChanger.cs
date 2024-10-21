@@ -11,7 +11,6 @@ public class PaddleSpeedChanger : MonoBehaviour
     private void Awake()
     {
         paddleStats = GetComponentInParent<PaddleStats>();
-        //currentSpeed = paddleStats.moveSpeed;
     }
 
     private void OnEnable()
