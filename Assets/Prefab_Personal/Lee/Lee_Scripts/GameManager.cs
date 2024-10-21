@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
     public void MissBall(GameObject inBall)
     {
         BallList.Remove(inBall);
-        Destroy(Ball);
+        Destroy(inBall);
         
 
         if (BallList.Count == 0)
