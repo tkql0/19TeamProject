@@ -147,5 +147,5 @@ MonoBehaviour:
   ball: {fileID: 0}
   bar: {fileID: 0}
   crackSprites:
-  - {fileID: 756492713, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
   - {fileID: 1165638563, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
+  - {fileID: 756492713, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}

@@ -40,7 +40,7 @@ public class Brick_Park : MonoBehaviour
     {
         if (inCollision.gameObject.layer == 7)
         {
-            this.gameObject.SetActive(false);
+            TakeDamage();
         }
         else if (inCollision.gameObject == bar)
         {
@@ -52,9 +52,11 @@ public class Brick_Park : MonoBehaviour
     public void TakeDamage()
     {
         hitPoints--;
+        Debug.Log("Brick hit! Remaining HP: " + hitPoints); // Check how many hitPoints are left
 
         if (hitPoints > 0)
         {
+            Debug.Log("Brick cracked! HP: " + hitPoints);
             // Only update sprite for bricks with more than 1 HP (purple, red, orange, yellow)
             if (crackSprites.Length > 0 && (gameObject.tag == "PurpleBrick" || gameObject.tag == "RedBrick" ||
                                             gameObject.tag == "OrangeBrick" || gameObject.tag == "YellowBrick"))
@@ -64,6 +66,7 @@ public class Brick_Park : MonoBehaviour
         }
         else
         {
+            Debug.Log("Brick destroyed!");
             // Destroy the brick when HP reaches 0
             Destroy(gameObject);
         }
