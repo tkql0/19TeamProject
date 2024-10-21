@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 5287433426185202034}
   - component: {fileID: 6177928334502944696}
   - component: {fileID: 6743873161427631633}
+  - component: {fileID: 6306372406637816992}
   m_Layer: 5
   m_Name: NextStage
   m_TagString: Untagged
@@ -195,7 +196,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6177928334502944696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6306372406637816992}
+        m_TargetAssemblyTypeName: EndPannelButton, Assembly-CSharp
+        m_MethodName: nextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6306372406637816992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897272691364781050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7005f6c25597644b63e068bec6df0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2285126351673228542
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +494,7 @@ GameObject:
   - component: {fileID: 3136587950433694542}
   - component: {fileID: 4236699216307242590}
   - component: {fileID: 1192468575758002694}
+  - component: {fileID: 7231658778517932922}
   m_Layer: 5
   m_Name: RetryBtn
   m_TagString: Untagged
@@ -577,7 +603,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4236699216307242590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7231658778517932922}
+        m_TargetAssemblyTypeName: EndPannelButton, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7231658778517932922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689176946546776611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7005f6c25597644b63e068bec6df0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6047506898548009249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,6 +1176,7 @@ GameObject:
   - component: {fileID: 1836010106063579643}
   - component: {fileID: 3178870670390020192}
   - component: {fileID: 594422954690797002}
+  - component: {fileID: 5227744811342055688}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -1234,7 +1285,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3178870670390020192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5227744811342055688}
+        m_TargetAssemblyTypeName: EndPannelButton, Assembly-CSharp
+        m_MethodName: Home
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5227744811342055688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775018532089314727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7005f6c25597644b63e068bec6df0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8541145224046858633
 GameObject:
   m_ObjectHideFlags: 0

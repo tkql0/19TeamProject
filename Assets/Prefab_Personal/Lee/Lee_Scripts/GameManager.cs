@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
 
     public bool isGameStart = false;
 
-    public GameObject endPanel;
+    public GameObject endPanelRef;
+    private GameObject endPanel;
     private EndPanelController endPanelController;
     public List<Sprite> castings;
     private EndPanelAnimationController endpanelanimation;
@@ -38,12 +39,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
 
         //pool = GetComponent<ObjectPool_KIM>();
-        endPanelController = endPanel.GetComponent<EndPanelController>();
-        endpanelanimation = endPanel.GetComponentInChildren<EndPanelAnimationController>();
+     
     }
 
     public void StageStart()
     {
+        endPanel = Instantiate(endPanelRef);
+        endPanelController = endPanel.GetComponent<EndPanelController>();
+        endpanelanimation = endPanel.GetComponentInChildren<EndPanelAnimationController>();
         life = 3;
         currentScore = 0;
         GameObject newball = Instantiate(Ball,new Vector3 (0,-3,0),Quaternion.identity);

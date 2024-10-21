@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9483ad095c8ab4871b6dcfb847551669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 8
+  level: 9
 --- !u!114 &669029245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,7 +1745,7 @@ MonoBehaviour:
   time: 0
   isMultiplay: 0
   isGameStart: 0
-  endPanel: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
+  endPanelRef: {fileID: 3264917717080720661, guid: 692360898c7ac4889874dc4084092d01, type: 3}
   castings:
   - {fileID: 21300000, guid: 34d1034da6a2d4690a4def038da86308, type: 3}
   - {fileID: 21300000, guid: 7d2e25c3b301346748625965adb9029b, type: 3}
