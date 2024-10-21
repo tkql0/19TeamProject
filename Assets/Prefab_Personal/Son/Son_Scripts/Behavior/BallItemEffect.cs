@@ -56,24 +56,8 @@ public class BallItemEffect : MonoBehaviour
     private void ApplyDouble(float inValue)
     {
         GameObject newBall =  Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        if (gameObject.TryGetComponent<BallItemEffect>(out var originalEffect))
-        {
-            if (newBall.TryGetComponent<BallItemEffect>(out var newEffect))
-            {
-                CopySerializedFields(originalEffect, newEffect);
-            }
-        }
+        newBall.TryGetComponent<BallItemEffect>(out var outEffect);
 
-    }
-    private void CopySerializedFields(BallItemEffect source, BallItemEffect destination)
-    {
-        var fields = typeof(BallItemEffect).GetFields(System.Reflection.BindingFlags.Instance |
-                                                      System.Reflection.BindingFlags.NonPublic |
-                                                      System.Reflection.BindingFlags.Public);
-
-        foreach (var field in fields)
-        {
-            field.SetValue(destination, field.GetValue(source));
-        }
+        outEffect.effectHandler = effectHandler;
     }
 }

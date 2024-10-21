@@ -44,7 +44,7 @@ public class PaddelMovement : MonoBehaviour
         {
             GameManager.Instance.BallList[0].TryGetComponent<Ball>(out var outBall);
 
-            outBall.transform.position 
+            outBall.transform.position
                 = transform.position + new Vector3(0, 1);
 
             if (Input.GetKeyDown(KeyCode.Space))

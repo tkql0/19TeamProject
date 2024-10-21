@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
     {
         // 이벤트 해제
         SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -119,20 +121,6 @@ public class GameManager : MonoBehaviour
         newBall.transform.position = InBallPosition.position;
         BallList.Add(newBall);
     }
-
-    //public void BallNumber()
-    //{
-
-    //}
-    //public void BallPower()
-    //{
-
-    //}
-
-    //public void PaddleIncrease()
-    //{
-
-    //}
 
     private void MakePlayer()
     {
