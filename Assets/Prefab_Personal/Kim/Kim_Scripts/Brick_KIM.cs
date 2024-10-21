@@ -7,16 +7,18 @@ public class Brick_KIM : MonoBehaviour
     public int heart = 1;
     public int score = 5;
 
-    //private Animator anim;
+    private Animator anim;
     //private BoxCollider2D boxCollider;
 
     private ItemManager itemManager;
 
     public bool isSpecialLevel_Test;
 
+    private int itemCount;
+
     private void Awake()
     {
-        //anim = GetCompoment<Animator>();
+        anim = GetComponent<Animator>();
         //boxCollider = GetComponent<BoxCollider2D>();
         itemManager = GetComponent<ItemManager>();
     }
@@ -24,7 +26,8 @@ public class Brick_KIM : MonoBehaviour
     private void OnEnable()
     {
         //boxCollider.enabled = true;
-        //anim.isDie.SetBool(false);
+        anim.SetBool("isMelt",false);
+        itemCount = 0;
     }
 
     private void Update()
@@ -59,7 +62,15 @@ public class Brick_KIM : MonoBehaviour
 
         if (isSpecialLevel_Test)
         {
-            ItemSpawn();
+            if (itemCount <= 3)
+            {
+                ItemSpawn();
+                itemCount++;
+            }
+            else
+            {
+                StartCoroutine(ItemCoolTime());
+            }
         }
         else
         {
@@ -76,6 +87,14 @@ public class Brick_KIM : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator ItemCoolTime()
+    {
+        anim.SetBool("isMelt", true);
+        yield return new WaitForSeconds(3f);
+        anim.SetBool("isMelt", false);
+        itemCount = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D incollision)

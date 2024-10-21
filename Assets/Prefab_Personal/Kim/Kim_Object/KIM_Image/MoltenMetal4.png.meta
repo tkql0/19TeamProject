@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9296e5e4273f7d04aba87b5e28503dd7
+guid: a92f9117910c1ce4cb83725f14a0cdf0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MoltenMetal3_0
+      name: MoltenMetal4_0
       rect:
         serializedVersion: 2
         x: 63
         y: 78
         width: 32
-        height: 39
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c2a8a4c0ee7b134e97c6466a18643d6
-      internalID: 1109545371
+      spriteID: 8307ba594c7481649b72608fbb268168
+      internalID: 1148878826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoltenMetal3_1
+      name: MoltenMetal4_1
       rect:
         serializedVersion: 2
         x: 96
         y: 78
         width: 32
-        height: 39
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51fab3ad026db164db4097050b8158b7
-      internalID: -639206288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoltenMetal3_2
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 117
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33f1741ffb703224283d18ad9c986499
-      internalID: -829586357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MoltenMetal3_3
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 117
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3925a70df29563945bf9a1f6a6dd59b6
-      internalID: -1337426685
+      spriteID: 94c419f8aaafd964e89bf5b12e346180
+      internalID: -474675429
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MoltenMetal3_0: 1109545371
-      MoltenMetal3_1: -639206288
-      MoltenMetal3_2: -829586357
-      MoltenMetal3_3: -1337426685
+      MoltenMetal4_0: 1148878826
+      MoltenMetal4_1: -474675429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3559907404037792909}
   - component: {fileID: 4566612966788023464}
   - component: {fileID: -8666733518966382189}
+  - component: {fileID: 644855722984518122}
   m_Layer: 9
   m_Name: Brick_KIM
   m_TagString: Untagged
@@ -174,8 +175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heart: 1
   score: 5
-  itemCount: 0
-  speed: 1
   isSpecialLevel_Test: 1
 --- !u!114 &-8666733518966382189
 MonoBehaviour:
@@ -198,3 +197,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87c5b0a409ba8584c994bd76ecb1a6cc, type: 2}
   - {fileID: 11400000, guid: 5d880746a8b4e62478656fb44525cd97, type: 2}
   - {fileID: 11400000, guid: 6a55708c7269564408507f145930aedd, type: 2}
+--- !u!95 &644855722984518122
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4592785157992563701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1588bb82988275a4a9a2a4cbd615ff74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
