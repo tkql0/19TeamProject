@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else if (Instance != null) Destroy(gameObject);
+        Time.timeScale = 1f;
 
         pool = GetComponent<ObjectPool_KIM>();
         endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();

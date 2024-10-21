@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D movementRigidbody;
     private ActionEventController controller;
-    private PaddleSpeedChanged paddleSpeedChanged;
+    private PaddleSpeedChanger paddleSpeedChanged;
     private Vector2 movedirection = Vector2.zero;
 
 
@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movementRigidbody = GetComponent<Rigidbody2D>();   
         controller = GetComponent<ActionEventController>();
-        paddleSpeedChanged = GetComponent<PaddleSpeedChanged>();
+        paddleSpeedChanged = GetComponent<PaddleSpeedChanger>();
     }
     // Start is called before the first frame update
     private void OnEnable()

@@ -9,7 +9,8 @@ public class ItemEffectHandler : MonoBehaviour
     public event Action<PaddleItemType, float> OnItemToPaddleEvent;
 
 
-    private void OnTriggerEnter2D(Collider2D incollision)
+
+    public void OnTriggerEnter2D(Collider2D incollision)
     {
         int ItemLayer = LayerMask.NameToLayer("Item");
         if (incollision.gameObject.layer == ItemLayer)

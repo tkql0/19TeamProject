@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6712928843871857859}
   - component: {fileID: 3073113864381863075}
-  - component: {fileID: -7070518103401405949}
   - component: {fileID: 7352150312812797181}
-  - component: {fileID: 1132889611741240803}
+  - component: {fileID: -1370071354767331947}
   m_Layer: 0
   m_Name: YellowBrick
-  m_TagString: Untagged
+  m_TagString: YellowBrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7070518103401405949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9028105973788315029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bd1da3d2e6449f4bd6fd3e750f58b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  bar: {fileID: 5624404945604538584, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
 --- !u!61 &7352150312812797181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,24 +131,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.15}
   m_EdgeRadius: 0
---- !u!95 &1132889611741240803
-Animator:
-  serializedVersion: 5
+--- !u!114 &-1370071354767331947
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9028105973788315029}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b065f0ce872c49e383ae9bed2717fe1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9350638907924497a8b73cd93fb4e583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 2
+  ball: {fileID: 0}
+  bar: {fileID: 0}
+  crackSprites:
+  - {fileID: 1118229699, guid: fa646a792d8c4415b83b6117d8158bc0, type: 3}
