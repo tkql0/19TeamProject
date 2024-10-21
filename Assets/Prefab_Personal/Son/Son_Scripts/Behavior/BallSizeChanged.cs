@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class BallSizeChanged : MonoBehaviour
@@ -34,7 +35,9 @@ public class BallSizeChanged : MonoBehaviour
     {
         Vector3 newScale = transform.localScale;
         newScale.x = inScaleValue;
-        newScale.y = newScale.x;
+        newScale.y = inScaleValue;
         transform.localScale = newScale;
+        ballStats.currentScale = transform.localScale;
+        Debug.Log("currentScale + " + ballStats.currentScale);
     }
 }

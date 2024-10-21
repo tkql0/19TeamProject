@@ -15,8 +15,8 @@ public class ItemManager : MonoBehaviour
             return;
         }
 
-        int randomIndex = Random.Range(0, items.Count);
-        ItemSO selectedItem = items[3];
+        int randomIndex = Random.Range(0, 4);//items.Count
+        ItemSO selectedItem = items[randomIndex];
 
         CreateItem(selectedItem, inSpawnPosition);
     }

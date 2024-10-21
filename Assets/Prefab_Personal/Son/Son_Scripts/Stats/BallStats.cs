@@ -10,16 +10,18 @@ public class BallStats : MonoBehaviour
 
 
     public float size { get; private set; }
-    public float power { get; private set; }  //--> 만들어 두기만?
+    public float power { get; private set; }
     public bool isDouble { get; private set; }
     public bool isInvincible { get; private set; }
-    
+    public Vector2 currentScale { get;  set; }
+
     private float minSize = 2f;
     private float maxSize = 10f;
 
     public void Awake()
     {
         size = 6.0f;
+        currentScale = new Vector3(size, size, 0);
         power = 1f;
         isDouble = false;
         isInvincible = false;

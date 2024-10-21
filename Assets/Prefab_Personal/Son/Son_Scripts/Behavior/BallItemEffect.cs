@@ -56,24 +56,25 @@ public class BallItemEffect : MonoBehaviour
     private void ApplyDouble(float inValue)
     {
         GameObject newBall =  Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        if (gameObject.TryGetComponent<BallItemEffect>(out var originalEffect))
-        {
-            if (newBall.TryGetComponent<BallItemEffect>(out var newEffect))
-            {
-                CopySerializedFields(originalEffect, newEffect);
-            }
-        }
-
+        //newBall.TryGetComponent<BallItemEffect>(out var outEffect);
+        //Debug.Log("적용전 : " + newBall.transform.localScale);
+        //newBall.transform.localScale = stats.currentScale;
+        //Debug.Log("적용후 : " + newBall.transform.localScale);
+        //outEffect.effectHandler = effectHandler;
+        SetBasic(newBall);
+        newBall.transform.localScale = stats.currentScale;
     }
-    private void CopySerializedFields(BallItemEffect source, BallItemEffect destination)
-    {
-        var fields = typeof(BallItemEffect).GetFields(System.Reflection.BindingFlags.Instance |
-                                                      System.Reflection.BindingFlags.NonPublic |
-                                                      System.Reflection.BindingFlags.Public);
 
-        foreach (var field in fields)
+    private void SetBasic(GameObject newBall)
+    {
+        newBall.TryGetComponent<BallItemEffect>(out var outEffect);
+        Debug.Log("적용전 : " + newBall.transform.localScale);
+        if (newBall.transform.localScale == Vector3.zero)
         {
-            field.SetValue(destination, field.GetValue(source));
+            newBall.transform.localScale = stats.currentScale;
         }
+        newBall.transform.localScale = stats.currentScale;
+        Debug.Log("적용후 : " + newBall.transform.localScale);
+        outEffect.effectHandler = effectHandler;
     }
 }
