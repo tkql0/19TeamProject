@@ -44,6 +44,7 @@ public class BallStats : MonoBehaviour
         get { return isDouble; }
         set
         {
+            
             bool isDouble = value;
             if (isDouble)
             {

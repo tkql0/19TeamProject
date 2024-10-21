@@ -26,6 +26,7 @@ public class BallDuplicator : MonoBehaviour
 
     private void OnBallDuplicte()
     {
+        
         GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
         if (newBall.TryGetComponent<BallStats>(out var newBallStats))
         {

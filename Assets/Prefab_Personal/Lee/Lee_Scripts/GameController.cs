@@ -10,18 +10,19 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        Instantiate(player1);
+        GameManager.Instance.player1 = Instantiate(player1);
         if (GameManager.Instance.isMultiplay)
         {
             Instantiate(player2);
         }
-        GameManager.Instance.StageStart();
+        
 
-        player1.TryGetComponent<ItemEffectHandler>(out var player1ItemHandler);
+        GameManager.Instance.player1.TryGetComponent<ItemEffectHandler>(out var player1ItemHandler);
         GameManager.Instance.Ball.TryGetComponent<BallItemEffect>(out var itemEffect);
         GameManager.Instance.Ball.TryGetComponent<BallDuplicator>(out var duplicator);
         itemEffect.effectHandler = player1ItemHandler;
         duplicator.effectHandler = player1ItemHandler;
+        GameManager.Instance.StageStart();
 
 
     }

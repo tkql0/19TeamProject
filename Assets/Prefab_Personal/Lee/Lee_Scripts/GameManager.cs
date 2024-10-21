@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public GameObject endAnimation;
     private EndPanelAnimationController endpanelanimation;
 
+    public GameObject player1;
+
     private void Awake()
     {
         if (Instance == null)
