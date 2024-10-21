@@ -1634,6 +1634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ball: {fileID: 6569195772484403435, guid: 835d79b2ead790b41b6eb965e34f2d58, type: 3}
   BallList: []
+  pool: {fileID: 0}
   scoreRanking: 
   currentScore: 0
   highScore: 0
@@ -1642,6 +1643,16 @@ MonoBehaviour:
   isMultiplay: 0
   player1: {fileID: 0}
   player2: {fileID: 0}
+  isGameStart: 0
+  endPanel: {fileID: 0}
+  clearTxt: {fileID: 0}
+  endPanelController: {fileID: 0}
+  castings:
+  - {fileID: 21300000, guid: 34d1034da6a2d4690a4def038da86308, type: 3}
+  - {fileID: 21300000, guid: 7d2e25c3b301346748625965adb9029b, type: 3}
+  - {fileID: 21300000, guid: f905eea9d2168428a98ad41968a62478, type: 3}
+  - {fileID: 21300000, guid: 262a2f7e2ae01485d916d56190a26a60, type: 3}
+  endAnimation: {fileID: 0}
 --- !u!4 &1080931989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}
@@ -1901,8 +1912,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1665826447}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1237232658 stripped
@@ -2409,11 +2419,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50c7b1316561b4d959c15f015fb633e5, type: 3}
---- !u!4 &1665826447 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6926260830647685598, guid: 3104a89c25c6ec94389cc9ce17290864, type: 3}
-  m_PrefabInstance: {fileID: 1024887403}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1682313467
 PrefabInstance:
   m_ObjectHideFlags: 0

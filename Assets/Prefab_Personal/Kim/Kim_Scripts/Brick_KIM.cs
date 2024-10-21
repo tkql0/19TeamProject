@@ -30,7 +30,7 @@ public class Brick_KIM : MonoBehaviour
         boxCollider.enabled = true;
         //anim.isDie.SetBool(false);
         heart = 1;
-        // °ÔÀÓ ·¹º§ÀÌ ÀÖ´Â ½ºÅ©¸³Æ®¿¡¼­ ¹Þ¾Æ¿À±â
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½
         isSpecialLevel_Test = false;
     }
 
@@ -40,7 +40,7 @@ public class Brick_KIM : MonoBehaviour
     }
 
     private void Movement()
-    { // Á¶±Ý¾¿ º®µ¹ÀÌ ³»·Á¿À°Ô ÇÏ±â
+    { // ï¿½ï¿½ï¿½Ý¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½
         transform.position = Vector2.MoveTowards(transform.position
             , transform.position + new Vector3(0, -1), 0.1f * Time.deltaTime);
     }
@@ -51,8 +51,8 @@ public class Brick_KIM : MonoBehaviour
 
         if (randomDrop == 2)
         {
-            //int randomItem = Random.Range(0, ¾ÆÀÌÅÛ Á¾·ù);
-            //¾ÆÀÌÅÛ.¾ÆÀÌÅÛ »ý¼º(randomItem);
+            //int randomItem = Random.Range(0, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½);
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(randomItem);
             itemManager.SpawnRandomItem(transform.position);
             itemCount++;
         }
@@ -66,14 +66,14 @@ public class Brick_KIM : MonoBehaviour
         if (inCollision.gameObject.TryGetComponent<Ball>(out var outBall))
         {
             if (isSpecialLevel_Test)
-            { // Æ¯¼ö ·¹º§ÀÏ °æ¿ì µ¥¹ÌÁö °¨¼Ò ¾øÀ½
+            { // Æ¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 int randomDrop = Random.Range(0, 3);
 
                 if(randomDrop == 2)
                 {
-                    //int randomItem = Random.Range(0, ¾ÆÀÌÅÛ Á¾·ù);
+                    //int randomItem = Random.Range(0, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½);
 
-                    //¾ÆÀÌÅÛ.¾ÆÀÌÅÛ »ý¼º(randomItem);
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(randomItem);
                     itemManager.SpawnRandomItem(transform.position);
                     GameManager.Instance.currentScore += score;
                 }
@@ -87,9 +87,9 @@ public class Brick_KIM : MonoBehaviour
             }
             else
             {
-                // ÄÝ¶óÀÌ´õ°¡ »ç¶óÁö°í °øÀÌ Åë°ú´Â °ÍÀ» È®ÀÎ
+                // ï¿½Ý¶ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
                 boxCollider.enabled = false;
-                // ¾Ö´Ï¸ÞÀÌ¼ÇÀÌ ÀÖ´Â ¿ÀºêÁ§Æ®¸¦ »ý¼ºÇÏ¸é µÇ³ª?
+                // ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ç³ï¿½?
                 //anim.isDie.SetBool(true);
                 Invoke("Dead", 2f);
                 return;
@@ -97,9 +97,9 @@ public class Brick_KIM : MonoBehaviour
         }
     }
 
-    // ±×·¯³× ºí·ÏÀÌ ¹Ù´Ú¿¡ ´ê¾ÒÀ» »óÈ²µµ ÀÖ¾úÁö
+    // ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È²ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½
     private void OnTriggerEnter2D(Collider2D incollision)
-    { // º®µ¹ÀÌ ¹Ù´Ú¿¡ ´ê¾Ò´Â°¡?
+    { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù´Ú¿ï¿½ ï¿½ï¿½Ò´Â°ï¿½?
         GameManager.Instance.GameOver();
     }
 }

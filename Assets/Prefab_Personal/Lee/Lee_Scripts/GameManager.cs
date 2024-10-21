@@ -24,6 +24,13 @@ public class GameManager : MonoBehaviour
 
     public bool isGameStart = false;
 
+    public GameObject endPanel;
+    public GameObject clearTxt;
+    public EndPanelController endPanelController;
+    public List<Sprite> castings;
+    public GameObject endAnimation;
+    private EndPanelAnimationController endpanelanimation;
+    
     private void Awake()
     {
         if (Instance == null)                           // Singletone class
@@ -34,23 +41,24 @@ public class GameManager : MonoBehaviour
         else if (Instance != null) Destroy(gameObject);
 
         pool = GetComponent<ObjectPool_KIM>();
+        endpanelanimation = endAnimation.GetComponent<EndPanelAnimationController>();
     }
 
     private void OnEnable()
     {
-        // ¾ÀÀÌ ·ÎµåµÉ ¶§¸¶´Ù ÀÌº¥Æ® µî·Ï
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
-        // ÀÌº¥Æ® ÇØÁ¦
+        // ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // ¾À ÀÌ¸§ÀÌ MainSceneÀÎ °æ¿ì MakePlayer È£Ãâ
+        // ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ MainSceneï¿½ï¿½ ï¿½ï¿½ï¿½ MakePlayer È£ï¿½ï¿½
         if (scene.name == "MainScene")
         {
             Invoke(nameof(MakePlayer), 0f);
@@ -68,19 +76,54 @@ public class GameManager : MonoBehaviour
         currentScore = 0;
         //LaunchBall();
     }
-
-    public void StageClear()
+    
+    public void GameOver(bool clear)
     {
-        highScore = Mathf.Max(highScore, currentScore);
-        scoreRanking.Add(currentScore);
-        scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));                 // Sort in Descending order
-    }
-
-    public void GameOver()
-    {
+        EndPanel(clear);
+        Time.timeScale = 0;
+        endPanel.SetActive(true);
+        endPanelController.ClearText(clear);
+        endPanelController.SetScore(currentScore);
+        endPanelController.SetCastingImage(castings[3]);
+        endpanelanimation.Down();
+        
         highScore = Mathf.Max(highScore, currentScore);
         scoreRanking.Add(currentScore);
         scoreRanking.Sort(new Comparison<int>((n1, n2) => n2.CompareTo(n1)));
+    }
+    
+    public void EndPanel(bool clear)
+    {
+        if (clear)
+        {
+            AudioManager.Instance.PlayBGM(AudioManager.AudioType.ClearBGM);
+        }
+        else
+        {
+            AudioManager.Instance.PlayBGM(AudioManager.AudioType.FailBGM);
+        }
+    }
+
+    public void CalculateScore()
+    {
+        Sprite sprite;
+        if (currentScore < 500)
+        {
+            sprite = castings[0];
+        }
+        else if (currentScore < 1000)
+        {
+            sprite = castings[1];
+        }
+        else if (currentScore < 2000)
+        {
+            sprite = castings[2];
+        }
+        else
+        {
+            sprite = castings[3];
+        }
+        endPanelController.SetCastingImage(sprite);
     }
 
     public void MissBall(GameObject inBall)
@@ -100,7 +143,7 @@ public class GameManager : MonoBehaviour
         life--;
         if (life == 0)
         {
-            GameOver();
+            GameOver(false);
         }
         else
         {

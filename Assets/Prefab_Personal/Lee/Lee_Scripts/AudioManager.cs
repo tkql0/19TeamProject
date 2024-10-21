@@ -10,13 +10,15 @@ public class AudioManager : MonoBehaviour
     
     public AudioClip menuBGM;
     public AudioClip hammerBGM;
-    public AudioClip endBGM;
+    public AudioClip failBGM;
+    public AudioClip clearBGM;
 
     public enum AudioType
     {
         MenuBGM,
-        HammerBGM,
-        EndBGM
+        FailBGM,
+        ClearBGM,
+        HammerBGM
     }
     
 
@@ -47,12 +49,16 @@ public class AudioManager : MonoBehaviour
                 audioSource.clip = menuBGM;
                 audioSource.Play();
                 break;
+            case AudioType.FailBGM:
+                audioSource.clip = failBGM;
+                audioSource.Play();
+                break;
+            case AudioType.ClearBGM:
+                audioSource.clip = clearBGM;
+                audioSource.Play();
+                break;
             case AudioType.HammerBGM:
                 audioSource.PlayOneShot(hammerBGM);
-                break;
-            case AudioType.EndBGM:
-                audioSource.clip = endBGM;
-                audioSource.Play();
                 break;
             default:
                 throw new System.Exception("Invalid AudioType");
