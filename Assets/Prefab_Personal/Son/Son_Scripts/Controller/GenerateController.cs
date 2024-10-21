@@ -29,7 +29,7 @@ public class GenerateController : MonoBehaviour
     private void OnEnable()
     {
         actionMap["Move"].performed += PlayerMove;
-        actionMap["Move"].canceled += StopMove;
+        actionMap["Move"].canceled += PlayerMove;
         actionMap.Enable();
     }
 
@@ -37,7 +37,7 @@ public class GenerateController : MonoBehaviour
     private void OnDisable()
     {
         actionMap["Move"].performed -= PlayerMove;
-        actionMap["Move"].canceled -= StopMove;
+        actionMap["Move"].canceled -= PlayerMove;
         actionMap.Disable();
     }
 

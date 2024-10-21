@@ -163,5 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid2D: {fileID: 0}
   minSpeed: 4
-  maxSpeed: 6
   damage: 1

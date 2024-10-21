@@ -7,7 +7,8 @@ public class PaddleItemEffect : MonoBehaviour
 {
     private ItemEffectHandler effectHandler;
     private PaddleStats stats;
-    //private Item item;
+
+
     private void Awake()
     {
         effectHandler = GetComponent<ItemEffectHandler>();
@@ -18,28 +19,34 @@ public class PaddleItemEffect : MonoBehaviour
     {
         effectHandler.OnItemToPaddleEvent += OnPaddleChange;
     }
+
     private void OnDisable()
     {
         effectHandler.OnItemToPaddleEvent -= OnPaddleChange;
     }
-    private void OnPaddleChange(Item.ItemType itemType)// need parameter some value
+
+
+    private void OnPaddleChange(PaddleItemType inPaddleType, float inValue)
     {
-        switch(itemType)
+        switch (inPaddleType)
         {
-            case Item.ItemType.PaddleIncrease:
-                ApplyLengthChange(2);//need item some value(lick increase 12)
+            case (PaddleItemType.PaddleIncreaseLength or PaddleItemType.PaddleDecreaseLength):
+                ApplyLengthChange(inValue);
+                break;
+
+            case PaddleItemType.PaddleIncreaseSpeed or PaddleItemType.PaddleDecreaseSpeed:
+                ApplySpeedChange(inValue);
                 break;
         }
     }
 
     private void ApplyLengthChange(float inScaleValue)
     {
-        Debug.Log(stats.Length);
-        Debug.Log(inScaleValue);
         stats.Length *= inScaleValue;
-        Debug.Log(stats.Length);
-        //Vector3 newScale = transform.localScale;
-        //newScale.x = inScaleValue;
-        //transform.localScale = newScale;
+    }
+
+    private void ApplySpeedChange(float inSpeedValue)
+    {
+        stats.MoveSpeed += inSpeedValue;
     }
 }

@@ -5,46 +5,47 @@ using UnityEngine;
 
 public class ItemEffectHandler : MonoBehaviour
 {
-    public event Action<Item.ItemType> OnItemToPaddleEvent;
-    public event Action<Item.ItemType> OnItemToBallEvent;
-    //private Item item;
-    private void OnTriggerEnter2D(Collider2D Incollision)
+    public event Action<BallItemType, float> OnItemToBallEvent;
+    public event Action<PaddleItemType, float> OnItemToPaddleEvent;
+
+
+
+    public void OnTriggerEnter2D(Collider2D incollision)
     {
-        if (Incollision.gameObject.layer == 10)
+        int ItemLayer = LayerMask.NameToLayer("Item");
+        if (incollision.gameObject.layer == ItemLayer)
         {
-            Debug.Log("df");
-            Item item = Incollision.GetComponent<Item>();
+            ItemSOHolder itemSOHolder = incollision.GetComponent<ItemSOHolder>();
+            ItemSO item = itemSOHolder.itemSO;
             if (item != null)
             {
-                HandleItemEffect(item.itemType); //(item.itemType, item.effectValue);
-                //Destroy(Incollision.gameObject); in Item Destroy(gameObject);
+                HandleItemEffect(item);
             }
         }
     }
 
-    private void HandleItemEffect(Item.ItemType itemType)
+
+    private void HandleItemEffect(ItemSO inItem)
     {
-        switch (itemType)
+        switch (inItem.itemType)
         {
-            case Item.ItemType.BallNumber:
-                CallOnItemTOBallEvent(itemType);
+            case ItemType.Ball:
+                CallOnItemToBallEvent(inItem.ballType, inItem.value);
                 break;
-            case Item.ItemType.BallPower:
-                CallOnItemTOBallEvent(itemType);
-                break;
-            case Item.ItemType.PaddleIncrease:
-                CallItemToPaddleEvent(itemType);
+            case ItemType.Paddle:
+                CallItemToPaddleEvent(inItem.paddleType, inItem.value);
                 break;
         }
     }
 
-    private void CallItemToPaddleEvent(Item.ItemType itemType)
+    private void CallOnItemToBallEvent(BallItemType inBallItemType, float inValue)
     {
-        OnItemToPaddleEvent?.Invoke(itemType);
+        OnItemToBallEvent?.Invoke(inBallItemType, inValue);
     }
 
-    private void CallOnItemTOBallEvent(Item.ItemType itemType)
+    private void CallItemToPaddleEvent(PaddleItemType inPaddleItemType, float inValue)
     {
-        OnItemToBallEvent?.Invoke(itemType);
+        OnItemToPaddleEvent?.Invoke(inPaddleItemType, inValue);
     }
+
 }

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else if (Instance != null) Destroy(gameObject);
-
+        Time.timeScale = 1f;
     }
 
     private void OnEnable()

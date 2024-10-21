@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class PaddleStats : MonoBehaviour
@@ -8,23 +9,28 @@ public class PaddleStats : MonoBehaviour
     public event Action<float> OnLengthChangedEvent;
     public event Action<float> OnSpeedChangedEvent;
 
-    public float length;
-    public float moveSpeed;
-
+    public float length {  get; private set; }
+    public float moveSpeed { get; private set; }
+    private float minLength = 48f;//3f;
+    private float maxLength = 48f;
+    private float minSpeed = 2f;
+    private float maxSpeed = 10f;
+    
     public void Awake()
     {
-        length = 3;
-        moveSpeed = 5;
+        length = 48f; //6;
+        moveSpeed = 6;
     }
     public float Length
     {
         get { return length; }
         set
         {
-            if (length != value)
+            float clampedValue = Mathf.Clamp(value, minLength, maxLength);
+            if (length != clampedValue)
             {
-                length = value;
-                OnLengthChangedEvent?.Invoke(value);
+                length = clampedValue;
+                OnLengthChangedEvent?.Invoke(clampedValue);
             }
         }
     }
@@ -33,10 +39,11 @@ public class PaddleStats : MonoBehaviour
         get { return moveSpeed; }
         set
         {
-            if (moveSpeed != value)
+            float clampedValue = Mathf.Clamp(value, minSpeed, maxSpeed);
+            if (moveSpeed != clampedValue)
             {
-                moveSpeed = value;
-                OnSpeedChangedEvent?.Invoke(value);
+                moveSpeed = clampedValue;
+                OnSpeedChangedEvent?.Invoke(clampedValue);
             }
         }
     }
