@@ -11,14 +11,14 @@ public class PaddleStats : MonoBehaviour
 
     public float length {  get; private set; }
     public float moveSpeed { get; private set; }
-    private float minLength = 48f;//3f;
+    private float minLength = 3f;//3f;
     private float maxLength = 48f;
     private float minSpeed = 2f;
     private float maxSpeed = 10f;
     
     public void Awake()
     {
-        length = 48f; //6;
+        length = 6f; //6;
         moveSpeed = 6;
     }
     public float Length

@@ -8,8 +8,12 @@ public class Ball : MonoBehaviour
     public Rigidbody2D rigid2D;
 
     public float minSpeed;
+    public float maxSpeed;
 
     public int damage = 0;
+
+    //public int 
+
 
     private void Awake()
     {
@@ -23,25 +27,34 @@ public class Ball : MonoBehaviour
 
     private void FixedUpdate()
     {
-       // if (!GameManager.Instance.isGameStart)
-        {
+        // if (!GameManager.Instance.isGameStart)
+        //{
           //  return;
-        }
+        //}
 
         Vector2 moveVec = transform.position;
         float speed = moveVec.magnitude;
 
         if (speed < minSpeed)
         {
-            if (Mathf.Abs(rigid2D.velocity.x) < minSpeed)
+            //if (Mathf.Abs(rigid2D.velocity.x) < minSpeed)
+            //{
+            //    rigid2D.velocity = new Vector2(Mathf.Sign(rigid2D.velocity.x)
+            //        * minSpeed, rigid2D.velocity.y);
+            //}
+            //else if (Mathf.Abs(rigid2D.velocity.y) < minSpeed)
+            //{
+            //    rigid2D.velocity = new Vector2(rigid2D.velocity.x,
+            //        Mathf.Sign(rigid2D.velocity.y) * minSpeed);
+            //}
+
+            if (rigid2D.velocity.magnitude < minSpeed)
             {
-                rigid2D.velocity = new Vector2(Mathf.Sign(rigid2D.velocity.x)
-                    * minSpeed, rigid2D.velocity.y);
+                rigid2D.velocity = rigid2D.velocity.normalized * minSpeed;
             }
-            else if (Mathf.Abs(rigid2D.velocity.y) < minSpeed)
+            else if(rigid2D.velocity.magnitude > maxSpeed)
             {
-                rigid2D.velocity = new Vector2(rigid2D.velocity.x,
-                    Mathf.Sign(rigid2D.velocity.y) * minSpeed);
+                rigid2D.velocity = rigid2D.velocity.normalized * maxSpeed;
             }
         }
     }
