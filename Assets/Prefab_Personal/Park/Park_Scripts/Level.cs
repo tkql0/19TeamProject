@@ -16,14 +16,9 @@ public class Level : MonoBehaviour
 
     public void OpenScene()
     {
-        if (level == 0)
-        {
-            SceneManager.LoadScene("MainScene"); // Load the base scene
-        }
-        else
-        {
-            SceneManager.LoadScene("MainScene " + level.ToString()); // Load numbered scenes (with space)
-        }
+        AudioManager.Instance.stageLevel = level;
+        SceneManager.LoadScene("LogoScene");
+
 
     }
 }
