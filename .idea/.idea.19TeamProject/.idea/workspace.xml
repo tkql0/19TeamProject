@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9db4c27a-3d38-4d67-b532-0ce0e96229e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Anim/EndPanel.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Anim/EndPanel.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Anim/stop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Anim/stop.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Seo_Object/EndPanelCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Seo/Seo_Object/EndPanelCanvas.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
