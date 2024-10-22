@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9db4c27a-3d38-4d67-b532-0ce0e96229e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.19TeamProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Kim/Kim_Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Kim/Kim_Scripts/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Lee/Lee_Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Lee/Lee_Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab_Personal/Park/Park_Scripts/Brick_Park.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +111,7 @@
       <workItem from="1729253351830" duration="51000" />
       <workItem from="1729253416458" duration="694000" />
       <workItem from="1729256392411" duration="7303000" />
-      <workItem from="1729487417579" duration="12634000" />
+      <workItem from="1729487417579" duration="35664000" />
     </task>
     <servers />
   </component>

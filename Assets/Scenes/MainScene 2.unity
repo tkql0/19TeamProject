@@ -235,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (1)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2 (2)
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -630,7 +630,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2 (3)
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -745,7 +745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (6)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -802,7 +802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (3)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -827,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (1)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,7 +924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (4)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -994,7 +994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (5)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1060,7 +1060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (7)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (3)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1398,7 +1398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (5)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -1423,7 +1423,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2 (2)
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1617,7 +1617,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2 (1)
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1723,7 +1723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick (2)
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -1845,7 +1845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (1)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2163,7 +2163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (2)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2257,7 +2257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick (4)
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2520,7 +2520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905468845793384428, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: m_Name
-      value: GreenBrick
+      value: GreenBrick_Small
       objectReference: {fileID: 0}
     - target: {fileID: 6694306795818295929, guid: 21564efd8f1e849dbaffa6bfc00ae986, type: 3}
       propertyPath: ball
@@ -2545,7 +2545,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 2835154494586712042, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_Name
-      value: BlueBrick2
+      value: BlueBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 3740245259801745780, guid: 179db288f172948edb15c96fe6540e34, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2610,7 +2610,7 @@ PrefabInstance:
       objectReference: {fileID: 1067475166}
     - target: {fileID: 4471850711136535794, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_Name
-      value: GreenBrick2
+      value: GreenBrick_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 5000822912464634027, guid: a74b054bfd6ad4e47b6dc6f5485ccfd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2711,7 +2711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8487007341527265185, guid: be3da0e9ab7f641b7b25dcd97f9508f2, type: 3}
       propertyPath: m_Name
-      value: BlueBrick
+      value: BlueBrick_Small
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
