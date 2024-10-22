@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public List<Sprite> castings;
     private EndPanelAnimationController endpanelanimation;
 
+    public GameObject player1;
+
     private void Awake()
     {
         if (Instance == null)

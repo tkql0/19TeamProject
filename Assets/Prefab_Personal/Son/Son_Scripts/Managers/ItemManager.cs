@@ -15,7 +15,7 @@ public class ItemManager : MonoBehaviour
             return;
         }
 
-        int randomIndex = Random.Range(0, items.Count);//items.Count
+        int randomIndex = Random.Range(0, items.Count);
         ItemSO selectedItem = items[randomIndex];
 
         CreateItem(selectedItem, inSpawnPosition);
@@ -34,14 +34,16 @@ public class ItemManager : MonoBehaviour
         }
         
         SpriteRenderer renderer = itemObject.AddComponent<SpriteRenderer>();
+        Rigidbody2D rigidbody = itemObject.AddComponent<Rigidbody2D>();
         CircleCollider2D collider =itemObject.AddComponent<CircleCollider2D>();
         ItemSOHolder itemSOHolder = itemObject.AddComponent<ItemSOHolder>();
         ItemBehavior behavior = itemObject.AddComponent<ItemBehavior>();
 
-        itemSOHolder.itemSO = inItem;
-        itemObject.transform.position = inSpawnPosition;
         itemObject.layer = inItem.SetLayer;
+        itemObject.transform.position = inSpawnPosition;
         renderer.sprite = inItem.itemSprite;
+        rigidbody.gravityScale = 0;
         collider.isTrigger = true;
+        itemSOHolder.itemSO = inItem;
     }
 }

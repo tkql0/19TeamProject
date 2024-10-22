@@ -22,5 +22,6 @@ public enum PaddleItemType
     PaddleIncreaseSpeed,
     PaddleDecreaseSpeed,
     PaddleIncreaseLength,
-    PaddleDecreaseLength
+    PaddleDecreaseLength,
+    PaddleGetScore
 }

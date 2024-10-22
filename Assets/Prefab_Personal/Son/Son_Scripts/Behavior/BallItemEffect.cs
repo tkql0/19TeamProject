@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 
 public class BallItemEffect : MonoBehaviour
 {
-    [SerializeField] private ItemEffectHandler effectHandler;
+    [SerializeField] public List<ItemEffectHandler> effectHandler;
     private BallStats stats;
     private void Awake()
     {
@@ -19,7 +19,13 @@ public class BallItemEffect : MonoBehaviour
     {
         if (effectHandler != null)
         {
-            effectHandler.OnItemToBallEvent += OnBallChange;
+            foreach (var handler in effectHandler)
+            {
+                if (handler != null)
+                {
+                    handler.OnItemToBallEvent += OnBallChange;
+                }
+            }
         }
     }
 
@@ -27,7 +33,13 @@ public class BallItemEffect : MonoBehaviour
     {
         if (effectHandler != null)
         {
-            effectHandler.OnItemToBallEvent -= OnBallChange;
+            foreach (var handler in effectHandler)
+            {
+                if (handler != null)
+                {
+                    handler.OnItemToBallEvent -= OnBallChange;
+                }
+            }
         }
     }
 
@@ -43,7 +55,7 @@ public class BallItemEffect : MonoBehaviour
                 ApplyDouble(inValue);
                 break;
             case BallItemType.BallInvincible:
-                Debug.Log("杭 公利");
+                //Debug.Log("杭 公利");
                 break;
         }
     }
@@ -55,32 +67,6 @@ public class BallItemEffect : MonoBehaviour
 
     private void ApplyDouble(float inValue)
     {
-        GameObject newBall = Instantiate(gameObject, gameObject.transform.position, Quaternion.identity);
-        if (newBall.TryGetComponent<BallStats>(out var newBallStats))
-        {
-            newBallStats.Size = stats.Size;
-            //newBallStats.currentScale = stats.currentScale;
-        }
-        //newBall.transform.localScale = stats.currentScale;
-        if (newBall.TryGetComponent<BallItemEffect>(out var outEffect))
-        {
-            outEffect.effectHandler = effectHandler;
-        }
-        GameManager.Instance.BallList.Add(newBall);
-        //SetBasic(newBall);
-        //newBall.transform.localScale = stats.currentScale;
+        stats.IsDouble = true;
     }
-
-    //private void SetBasic(GameObject newBall)
-    //{
-    //    newBall.TryGetComponent<BallItemEffect>(out var outEffect);
-    //    Debug.Log("利侩傈 : " + newBall.transform.localScale);
-    //    if (newBall.transform.localScale == Vector3.zero)
-    //    {
-    //        newBall.transform.localScale = stats.currentScale;
-    //    }
-    //    newBall.transform.localScale = stats.currentScale;
-    //    Debug.Log("利侩饶 : " + newBall.transform.localScale);
-    //    outEffect.effectHandler = effectHandler;
-    //}
 }

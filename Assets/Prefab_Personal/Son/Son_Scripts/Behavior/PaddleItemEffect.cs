@@ -37,6 +37,9 @@ public class PaddleItemEffect : MonoBehaviour
             case PaddleItemType.PaddleIncreaseSpeed or PaddleItemType.PaddleDecreaseSpeed:
                 ApplySpeedChange(inValue);
                 break;
+            case PaddleItemType.PaddleGetScore:
+                ApplyGetScore(inValue);
+                break;
         }
     }
 
@@ -48,5 +51,11 @@ public class PaddleItemEffect : MonoBehaviour
     private void ApplySpeedChange(float inSpeedValue)
     {
         stats.MoveSpeed += inSpeedValue;
+    }
+
+    private void ApplyGetScore(float inScoreValue)
+    {
+        stats.CurrentScore += inScoreValue;
+        GameManager.Instance.currentScore += (int)inScoreValue;
     }
 }

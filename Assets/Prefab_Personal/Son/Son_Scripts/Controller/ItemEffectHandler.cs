@@ -47,5 +47,4 @@ public class ItemEffectHandler : MonoBehaviour
     {
         OnItemToPaddleEvent?.Invoke(inPaddleItemType, inValue);
     }
-
 }
