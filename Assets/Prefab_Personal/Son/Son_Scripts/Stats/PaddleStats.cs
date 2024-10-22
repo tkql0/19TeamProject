@@ -19,7 +19,7 @@ public class PaddleStats : MonoBehaviour
 
     public void Awake()
     {
-        length = 6f;
+        length = 6f; //6;
         moveSpeed = 6;
         currentScore = 0;
     }
