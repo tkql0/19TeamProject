@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else if (Instance != null) Destroy(gameObject);
-        Time.timeScale = 1f;
+        
 
         //pool = GetComponent<ObjectPool_KIM>();
      
@@ -53,12 +53,13 @@ public class GameManager : MonoBehaviour
         currentScore = 0;
         GameObject newball = Instantiate(Ball,new Vector3 (0,-3,0),Quaternion.identity);
         BallList.Add(newball);
+        Time.timeScale = 1f;
     }
 
     public void GameOver(bool clear)
     {
         EndPanel(clear);
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
         endPanel.SetActive(true);
         endPanelController.ClearText(clear);
         endPanelController.SetScore(currentScore);

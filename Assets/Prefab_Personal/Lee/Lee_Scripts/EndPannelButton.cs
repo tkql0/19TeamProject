@@ -9,11 +9,13 @@ public class EndPannelButton : MonoBehaviour
   
     public void Retry()
     {
+        Time.timeScale = 1f;
         AudioManager.Instance.PlayBGM(AudioManager.AudioType.MenuBGM);
         SceneManager.LoadScene("LogoScene");
     }
     public void nextLevel()
     {
+        Time.timeScale = 1f;
         AudioManager.Instance.PlayBGM(AudioManager.AudioType.MenuBGM);
         AudioManager.Instance.stageLevel++;
         if(AudioManager.Instance.stageLevel==11)
@@ -25,6 +27,7 @@ public class EndPannelButton : MonoBehaviour
     }
     public void Home()
     {
+        Time.timeScale = 1f;
         AudioManager.Instance.PlayBGM(AudioManager.AudioType.MenuBGM);
         SceneManager.LoadScene("MenuScene");
     }
