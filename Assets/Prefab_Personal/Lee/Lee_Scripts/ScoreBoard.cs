@@ -21,7 +21,7 @@ public class ScoreBoard : MonoBehaviour
     void Start()
     {
         List<int> scoreList = GameManager.Instance.scoreRanking;
-        scoreList = new List<int> { 15, 10, 8, 7 };
+      
 
         for (int i = 0; i < scoreList.Count; i++)
         {
