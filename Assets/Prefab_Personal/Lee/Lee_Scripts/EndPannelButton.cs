@@ -28,6 +28,7 @@ public class EndPannelButton : MonoBehaviour
     public void Home()
     {
         Time.timeScale = 1f;
+        GameManager.Instance.isMultiplay = false;
         AudioManager.Instance.PlayBGM(AudioManager.AudioType.MenuBGM);
         SceneManager.LoadScene("MenuScene");
     }

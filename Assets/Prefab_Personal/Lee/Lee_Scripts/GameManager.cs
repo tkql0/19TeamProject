@@ -38,10 +38,10 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else if (Instance != null) Destroy(gameObject);
-        
+
 
         //pool = GetComponent<ObjectPool_KIM>();
-     
+
     }
 
     public void StageStart()
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         endpanelanimation = endPanel.GetComponentInChildren<EndPanelAnimationController>();
         life = 3;
         currentScore = 0;
-        GameObject newball = Instantiate(Ball,new Vector3 (0,-3,0),Quaternion.identity);
+        GameObject newball = Instantiate(Ball, new Vector3(0, -3, 0), Quaternion.identity);
         BallList.Add(newball);
         Time.timeScale = 1f;
     }
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
     {
         BallList.Remove(inBall);
         Destroy(inBall);
-        
+
 
         if (BallList.Count == 0)
         {
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Invoke("LaunchBall", 1f);                 // When missed all balls, wait 1sec and launch the next ball 
-           // isGameStart = false;
+                                                      // isGameStart = false;
 
             //GameObject newBall = pool.SpawnFromPool("Ball");
             //BallList.Add(newBall);
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
     //    return newBall;
     //}
 
-   
+
     private void LaunchBall()
     {
         GameObject newball = Instantiate(Ball, new Vector3(0, -3, 0), Quaternion.identity);
