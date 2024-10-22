@@ -6,7 +6,7 @@ using UnityEngine;
 public class BallSpriteChanger : MonoBehaviour
 {
     [SerializeField] private Sprite[] ballSprite;
-    [SerializeField] private Animation anim;
+    [SerializeField] private Animator anim;
     private BallStats stats;
     private SpriteRenderer ballSpriteRenderer;
     private CapsuleCollider2D capsulCollider;
@@ -18,7 +18,7 @@ public class BallSpriteChanger : MonoBehaviour
         ballSpriteRenderer = GetComponent<SpriteRenderer>();
         capsulCollider = GetComponent<CapsuleCollider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animation>();
+        anim = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -37,21 +37,18 @@ public class BallSpriteChanger : MonoBehaviour
         {
             case 1:
                 ballSpriteRenderer.sprite = ballSprite[1];
+                anim.SetBool("isChangeOrange", true);
                 break;
             case 2:
                 ballSpriteRenderer.sprite = ballSprite[2];
+                anim.SetBool("isChangeRed", true);
                 break;
             case 3:
                 Debug.Log("애니메이션");
                 capsulCollider.enabled = false;
-                Vector3 stopPosition = transform.position;
-                transform.position = stopPosition;
-                //rigidbody2D.isKinematic = true;
+                rigidbody2D.velocity = Vector3.zero;
+                anim.SetBool("isBoom", true);
                 Destroy(gameObject,0.5f);
-                //anim.SetBool("isBoom", true);
-                //if (!isBoom)
-                //{
-                //}
                 break;
         }
     }

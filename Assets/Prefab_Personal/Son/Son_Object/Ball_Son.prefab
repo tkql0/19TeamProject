@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -3789086900550920628}
   - component: {fileID: 6752526031503127706}
   - component: {fileID: 5169161981866770274}
+  - component: {fileID: 940229045598039182}
   - component: {fileID: 2400798098734709972}
   - component: {fileID: 7392770301980770100}
   - component: {fileID: 2577964340249289253}
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 1047190802, guid: 011c45914bd314e9295afa3332a33110, type: 3}
+  m_Sprite: {fileID: 818122317, guid: 011c45914bd314e9295afa3332a33110, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -197,6 +198,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09efe59227df77d47ba39339417a679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &940229045598039182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569195772484403435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95d12df53ea2c640a931cf7074aedca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballSprite:
+  - {fileID: 818122317, guid: 011c45914bd314e9295afa3332a33110, type: 3}
+  - {fileID: 1793705719, guid: 011c45914bd314e9295afa3332a33110, type: 3}
+  - {fileID: 1047190802, guid: 011c45914bd314e9295afa3332a33110, type: 3}
+  anim: {fileID: 0}
 --- !u!114 &2400798098734709972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66eaaca1fd5b7b041b684a72b280f051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDoubleNum: 3
+  DoubleItemCount: 0
 --- !u!114 &7392770301980770100
 MonoBehaviour:
   m_ObjectHideFlags: 0
