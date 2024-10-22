@@ -47,8 +47,8 @@
 <img width="772" alt="Screenshot 2024-10-20 at 07 51 49" src="https://github.com/user-attachments/assets/ad994364-8a0d-4183-9e15-c2d15432e18a">
 
 ## UML DIAGRAM
-(uml 사진 넣을 위치)
-
+![image](https://github.com/user-attachments/assets/5e4d47fe-2543-475e-9756-18d494966773)
+발표 자료: https://www.canva.com/design/DAGT7VXHfjg/gYfX2kfhSfPO6Rd2ZKIqWA/view?utm_content=DAGT7VXHfjg&utm_campaign=designshare&utm_medium=link&utm_source=editor
 ## Trouble Shooting
 
 김준식 - 공의 속도 제한 : FixedUpdate에서 현재 움직이는 방향으로 최소or최대속도를 곱하여 제어
