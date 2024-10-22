@@ -224,7 +224,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &164076370
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1253,11 +1253,9 @@ MonoBehaviour:
   time: 0
   isMultiplay: 0
   isGameStart: 0
-  endPanel: {fileID: 0}
-  clearTxt: {fileID: 0}
-  endPanelController: {fileID: 0}
+  endPanelRef: {fileID: 0}
   castings: []
-  endAnimation: {fileID: 0}
+  player1: {fileID: 0}
 --- !u!4 &1080931989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8849718307198753399, guid: aabdb74ed20fd4e1bb1fd371e1996002, type: 3}

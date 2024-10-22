@@ -67,8 +67,8 @@ public class Brick_Park : MonoBehaviour
             this.gameObject.SetActive(false);
 
             int scoreToAdd = CalculateScoreByBrick();
-            GameManager.Instance.currentScore += scoreToAdd;    
-            
+            GameManager.Instance.currentScore += scoreToAdd;
+            AudioManager.Instance.PlayBGM(AudioManager.AudioType.HammerBGM);
             //if bricks is null call game over methods from game manager
             if (FindObjectsOfType<Brick_Park>().Length == 0) // Assuming this is the last brick
             {
